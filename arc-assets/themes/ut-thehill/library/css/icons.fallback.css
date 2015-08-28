@@ -1,0 +1,84 @@
+ 
+.icon-bobi-main {
+	background-image: url('png/bobi-main.png');
+	background-repeat: no-repeat;
+}
+
+ 
+h3.killer-logo a {
+	background-image: url('png/logo-main.png');
+	background-repeat: no-repeat;
+}
+
+
+
+body.smokey h3.killer-logo, body.valley h3.killer-logo, body.torch h3.killer-logo, body.globe h3.killer-logo, body.valley h3.killer-logo, body.river h3.killer-logo, body.leconte h3.killer-logo, body.rock h3.killer-logo, body.regalia h3.killer-logo, body.legacy h3.killer-logo, body.buckskin h3.killer-logo, body.switchgrass h3.killer-logo, body.energy h3.killer-logo  {
+	background-image: url('png/logo-main-ondark.png');
+	background-repeat: no-repeat;
+}
+
+
+
+.icon-fa-cal {
+	background-image: url('png/fa-cal.png');
+	background-repeat: no-repeat;
+}
+
+.icon-fa-chevron-down {
+	background-image: url('png/fa-chevron-down.png');
+	background-repeat: no-repeat;
+}
+.icon-fa-chevron-left-white {
+	background-image: url('png/fa-chevron-left-white.png');
+	background-repeat: no-repeat;
+}
+
+.icon-fa-chevron-left {
+	background-image: url('png/fa-chevron-left.png');
+	background-repeat: no-repeat;
+}
+
+.icon-fa-chevron-right {
+	background-image: url('png/fa-chevron-right.png');
+	background-repeat: no-repeat;
+}
+
+.icon-fa-comment {
+	background-image: url('png/fa-comment.png');
+	background-repeat: no-repeat;
+}
+
+.icon-fa-edit {
+	background-image: url('png/fa-edit.png');
+	background-repeat: no-repeat;
+}
+
+.icon-fa-find {
+	background-image: url('png/fa-find.png');
+	background-repeat: no-repeat;
+}
+
+.icon-fa-folder {
+	background-image: url('png/fa-folder.png');
+	background-repeat: no-repeat;
+}
+
+.icon-fa-gift {
+	background-image: url('png/fa-gift.png');
+	background-repeat: no-repeat;
+}
+
+.icon-fa-home {
+	background-image: url('png/fa-home.png');
+	background-repeat: no-repeat;
+}
+
+.icon-fa-tag {
+	background-image: url('png/fa-tag.png');
+	background-repeat: no-repeat;
+}
+
+.icon-fa-user {
+	background-image: url('png/fa-user.png');
+	background-repeat: no-repeat;
+}

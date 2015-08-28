@@ -1,0 +1,86 @@
+#mobile {
+	#sidebar {
+		#masthead {
+			min-height: 75px;
+		}
+		.killer-logo {
+			z-index: 1;
+		}
+		button.close.findpage {
+			z-index: 1;
+		}
+		.arc-logo-mobile {
+			width: 75px;
+			position: absolute;
+			top: 10px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			img {
+				width: 100%;
+			}
+		}
+		.sidebar-offcanvas {
+			button.close {
+				height: 69px;
+				border-bottom: 0 none;
+				background: #C0C0C0;
+				position: absolute;
+				right: 0;
+			}
+			form {
+				background: none;
+				.form-group {
+					margin-left: 0;
+				}
+			}
+		}
+		.sidebar-subtitle {
+			margin-left: 0;
+		}
+	}
+	.main-content {
+		float: none;
+		width: 100%;
+	}
+	#primary {
+		width: 96.8254%;
+		.two-column {
+			padding: 20px 10px;
+		}
+		.entry-content {
+			h1, h2 {
+				margin-left: 10px;
+			}
+		}
+		.home-content {
+			h1 {
+				margin-left: 10px;
+			}
+			.category-post {
+				padding-left: 10px;
+				h2 {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.home-banner .banner-title,
+	.home-banner .banner-subtitle {
+		padding: 0 10px;
+	}
+	.home-banner .banner-title {
+		font-size: 18px;
+	}
+	.home-banner .banner-subtitle {
+		bottom: 20%;
+		font-size: 14px;
+	}
+
+	#colophon {
+		width: 96.8254%;
+	}
+	.pager {
+		margin: 5px 0;
+	}
+}

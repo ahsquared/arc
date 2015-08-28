@@ -1,0 +1,55 @@
+.page-template-home {
+	.home-banner {
+		color: #fff;
+		text-align: center;
+		position: relative;
+		.banner-title,
+		.banner-subtitle {
+			font-weight: 300;
+			position: absolute;
+			bottom: 50%;
+			left: 0;
+			width: 100%;
+			padding: 0 60px;
+		}
+		.banner-title {
+			font-size: 36px;
+			text-transform: uppercase;
+		}
+		.banner-subtitle {
+			font-size: 16px;
+			bottom: 30%;
+		}
+	}
+	#primary {
+		#content {
+			margin: 0;
+			width: 100%;
+
+		}
+	}
+	.home-content {
+		h1 {
+			color: $home-header-color;
+			font-size: 26px;
+			font-weight: 400;
+			margin-left: 40px;
+		}
+		.col-sm-6 {
+			padding: 0;
+			box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+		}
+		.category-post-image {
+			img {
+				width: 100%;
+			}
+		}
+		.category-post {
+			padding-left: 40px;
+
+			h2 {
+				font-size: 24px;
+			}
+		}
+	}
+}

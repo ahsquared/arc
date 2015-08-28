@@ -1,0 +1,421 @@
+br.clear, .clearshortcode {
+  @include clearfix;
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+#content {
+  .panel-group {
+   // border-bottom: 1px solid $nav-tabs-border-color;
+    margin-bottom: $font-size-base;
+  }
+  .panel {
+    // border-top: 1px solid $nav-tabs-border-color;
+    //  background: #ddd;
+    h3 {
+    //  margin-top: 0;
+    //  font-size: $font-size-base;
+    //  padding: $padding-base-vertical $padding-base-horizontal;
+    //  background: #ddd;
+      a {
+        color: $utsmokey;
+       // @extend .icon-fa-chevron-left;
+       .icon-fa-chevron-down{
+         margin-right: $font-size-base;
+       }
+
+        &:hover {
+          text-decoration: none;
+        }
+        &:before {
+
+         margin-right: $font-size-base;
+       }
+        &.collapsed:before  {
+
+        }
+      }
+    }
+  }
+}
+#content {
+  .tab-content {
+    margin-bottom: $line-height-computed;
+    border-bottom: 1px solid $nav-tabs-border-color;
+  }
+}
+
+// Highlight boxes.
+
+.box-light {
+  padding: $line-height-computed/2;
+  border: 1px solid $nav-tabs-border-color;
+  background: $white;
+  margin-bottom: $line-height-computed;
+  &> :last-child, aside > :last-child {
+    margin-bottom: 0;
+  }
+  &.widget {
+    margin-top: $navbar-height;
+  }
+  h1,h2,h3 {
+    margin-top: 0;
+  }
+  .widget {
+    margin-bottom: 0;
+  }
+  &.orange, &.valley, &.torch, &.globe, &.limestone, &.smokey, &.sunsphere, &.river, &.leconte, &.rock, &.regalia, &.summitt, &.legacy, &.buckskin, &.switchgrass, &.eureka, &.energy, &.fountain {
+    background: $utorange;
+    border: 0;
+    color: $white;
+    a {
+      color: $white;
+      text-shadow: 0 0 $utorange, .08em 0 0 $utorange, 0 0, -.08em 0 0 $utorange;
+      background: none;
+      background-size: 85%  1px;
+      text-decoration: underline;
+    }
+  }
+  &.eureka, &.limestone, &.summitt, &.sunsphere {
+    color: $utsmokey;
+    a {
+      color: $utsmokey;
+    }
+  }
+  &.valley {
+    background: $utvalley;
+    p a {
+      text-shadow: 0 0 $utvalley, .08em 0 0 $utvalley, 0 0, -.08em 0 0 $utvalley;
+      }
+  }
+  &.torch {
+    background: $uttorch;
+    a {
+      text-shadow: 0 0 $uttorch, .08em 0 0 $uttorch, 0 0, -.08em 0 0 $uttorch;
+      }
+  }
+  &.globe {
+    background: $utglobe;
+    a {
+      text-shadow: 0 0 $utglobe, .08em 0 0 $utglobe, 0 0, -.08em 0 0 $utglobe;
+      }
+  }
+  &.limestone {
+    background: $utlimestone;
+    a {
+      text-shadow: 0 0 $utlimestone, .08em 0 0 $utlimestone, 0 0, -.08em 0 0 $utlimestone;
+      }
+  }
+  &.smokey {
+    background: $utsmokey;
+    a {
+      text-shadow: 0 0 $utsmokey, .08em 0 0 $utsmokey, 0 0, -.08em 0 0 $utsmokey;
+      }
+  }
+  &.sunsphere {
+    background: $utsunsphere;
+   a {
+      text-shadow: 0 0 $utsunsphere, .08em 0 0 $utsunsphere, 0 0, -.08em 0 0 $utsunsphere;
+      }
+  }
+  &.river {
+    background: $utriver;
+   a {
+      text-shadow: 0 0 $utriver, .08em 0 0 $utriver, 0 0, -.08em 0 0 $utriver;
+      }
+  }
+  &.fountain {
+    background: $utfountain;
+   a {
+      text-shadow: 0 0 $utfountain, .08em 0 0 $utfountain, 0 0, -.08em 0 0 $utfountain;
+      }
+  }
+  &.leconte {
+    background: $utleconte;
+   a {
+      text-shadow: 0 0 $utleconte, .08em 0 0 $utleconte, 0 0, -.08em 0 0 $utleconte;
+      }
+  }
+  &.rock {
+    background: $utrock;
+   a {
+      text-shadow: 0 0 $utrock, .08em 0 0 $utrock, 0 0, -.08em 0 0 $utrock;
+      }
+  }
+  &.regalia {
+    background: $utregalia;
+   a {
+      text-shadow: 0 0 $utregalia, .08em 0 0 $utregalia, 0 0, -.08em 0 0 $utregalia;
+      }
+  }
+  &.summitt {
+    background: $utsummitt;
+   a {
+      text-shadow: 0 0 $utsummitt, .08em 0 0 $utsummitt, 0 0, -.08em 0 0 $utsummitt;
+      }
+  }
+  &.legacy {
+    background: $utlegacy;
+   a {
+      text-shadow: 0 0 $utlegacy, .08em 0 0 $utlegacy, 0 0, -.08em 0 0 $utlegacy;
+      }
+  }
+  &.buckskin {
+    background: $utbuckskin;
+   a {
+      text-shadow: 0 0 $utbuckskin, .08em 0 0 $utbuckskin, 0 0, -.08em 0 0 $utbuckskin;
+      }
+  }
+  &.switchgrass {
+    background: $utswitchgrass;
+   a {
+      text-shadow: 0 0 $utswitchgrass, .08em 0 0 $utswitchgrass, 0 0, -.08em 0 0 $utswitchgrass;
+      }
+ }
+  &.eureka {
+    background: $uteureka;
+   a {
+      text-shadow: 0 0 $uteureka, .08em 0 0 $uteureka, 0 0, -.08em 0 0 $uteureka;
+      }
+  }
+  &.energy {
+    background: $utenergy;
+   a {
+      text-shadow: 0 0 $utenergy, .08em 0 0 $utenergy, 0 0, -.08em 0 0 $utenergy;
+      }
+  }
+  &.fountain {
+    background: $utfountain;
+  }
+
+  &.orange, &.valley, &.torch, &.globe, &.smokey, &.river, &.leconte, &.rock, &.regalia, &.legacy, &.buckskin, &.switchgrass, &.energy, &.fountain {
+    color: $white;
+  }
+
+
+  // Changing the color
+  
+  &.txregalia {
+    color: $utregalia;
+    a {
+      color: $utregalia;
+    }
+  }
+  &.txlegacy {
+    color: $utlegacy;
+    a {
+      color: $utlegacy;
+    }
+  }
+  &.txbuckskin {
+    color: $utbuckskin;
+    a {
+      color: $utbuckskin;
+    }
+  }
+  &.txswitchgrass {
+    color: $utswitchgrass;
+    a {
+      color: $utswitchgrass;
+    }
+  }
+  &.txenergy {
+    color: $utenergy;
+    a {
+      color: $utenergy;
+    }
+  }
+  &.txfountain{
+    color: $utfountain;
+    a {
+      color: $utfountain;
+    }
+  }
+  &.txtorch {
+    color: $uttorch;
+    a {
+      color: $uttorch;
+    }
+  }
+  &.txtorch {
+    color: $uttorch;
+    a {
+      color: $uttorch;
+    }
+  }
+  &.txsunsphere {
+    color: $utsunsphere;
+    a {
+      color: $utsunsphere;
+    }
+  }
+  &.txvalley {
+    color: $utvalley;
+    a {
+      color: $utvalley;
+    }
+  }
+  &.txglobe {
+    color: $utglobe;
+    a {
+      color: $utglobe;
+    }
+  }
+  &.txsmokey {
+    color: $utsmokey;
+    a {
+      color: $utsmokey;
+    }
+  }
+  &.txriver {
+    color: $utriver;
+    a {
+      color: $utriver;
+    }
+  }
+  &.txleconte {
+    color: $utleconte;
+    a {
+      color: $utleconte;
+    }
+  }
+  &.txrock {
+    color: $utrock;
+    a {
+      color: $utrock;
+    }
+  }
+  &.txorange {
+    color: $utorange;
+    a {
+      color: $utorange;
+    }
+  }
+}
+// Remove topmargin from highlights in the sidebar
+.sidebar-container {
+  .box-light.widget {
+    margin-top: 0;
+  }
+}
+.box {
+  padding: $line-height-computed/2;
+  // border: 1px solid $nav-tabs-border-color;
+  background: $utsmokey;
+  color: $white;
+  a {
+    color: $white;
+    background: linear-gradient($white, $white) center 1.09em no-repeat;
+    background-size: 85%  1px;
+  }
+
+}
+.callout {
+  float: left;
+  width: 50%;
+  padding: ($padding-large-horizontal * 2) ($padding-large-horizontal * 2) ($padding-large-horizontal * 2)  0;
+  font-size: $font-size-large;
+  color: $utrock;
+  text-align: right;
+  line-height: 1.5;
+  font-weight: bold;
+  @media screen and (min-width: $screen-sm) {
+    margin-left: -6%;
+    clear: left;
+  }
+  @media screen and (min-width: $screen-md) {
+    margin-left: 0;
+  }
+  @media screen and (min-width: 1420px) {
+    margin-left: -6%;
+  }
+  &.right {
+    float: right;
+    padding: ($padding-large-horizontal * 2) 0 ($padding-large-horizontal * 2) ($padding-large-horizontal * 2);
+    text-align: left;
+    margin-left: 0;
+    @media screen and (min-width: $screen-sm) {
+      margin-right: -6%;
+      clear: left;
+    }
+    @media screen and (min-width: $screen-md) {
+      margin-right: 0;
+    }
+    @media screen and (min-width: 1420px) {
+      margin-right: -6%;
+    }
+  }
+}
+.leftcolumn, .rightcolumn, .half {
+  float: left;
+  @include grid-unit(12);
+  margin-bottom: ($line-height-computed / 2);
+  @media (min-width: $screen-sm) {
+  	margin-right: $gutter-width *2;
+  	margin-left: 0;
+  	width: ($column-width * 6) + ($gutter-width * 10);
+  }
+}
+.rightcolumn {
+  margin-right: 0;
+  margin-left: $gutter-width * 2;
+  float: right;
+}
+.one-third.column {
+  float: left;
+  @include grid-unit(12);
+  margin-bottom: ($line-height-computed / 2);
+  @media (min-width: $screen-sm) {
+    margin-right: $gutter-width;
+    margin-left: 0;
+    width: ($column-width * 4) + ($gutter-width * 7);
+    &.right {
+      margin-right: 0;
+      float: right;
+    }
+  }
+}
+.one-third.column {
+  float: left;
+  @include grid-unit(12);
+  @media (min-width: $screen-sm) {
+      @include grid-unit(4);
+    }
+}
+.two-thirds.column {
+  float: left;
+  @include grid-unit(12);
+  margin-bottom: ($line-height-computed / 2);
+  @media (min-width: $screen-sm) {
+    margin-right: ($gutter-width * 2);
+    margin-left: 0;
+    width: ($column-width * 10) + ($gutter-width * 7);
+    &.right {
+      margin-right: 0;
+      float: right;
+    }
+  }
+}
+.one-fourth.column {
+  float: left;
+  @include grid-unit(12);
+  margin-bottom: ($line-height-computed / 2);
+  @media (min-width: $screen-sm) {
+      margin-right: $gutter-width;
+      margin-left: 0;
+      width: ($column-width * 6) + ($gutter-width * 11);
+    }
+  @media (min-width: $screen-md) {
+      margin-right: $gutter-width;
+      margin-left: 0;
+      width: ($column-width * 3) + ($gutter-width * 5);
+    }
+    &.right {
+      margin-right: 0;
+      float: right;
+    }
+}
