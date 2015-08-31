@@ -9,13 +9,14 @@
  * @since Twenty Thirteen 1.0
  */
 ?>
-<?php if (has_post_thumbnail() && !post_password_required() && !is_search()) : ?>
+<?php if (has_post_thumbnail() && !post_password_required() && !is_search() && !is_front_page()) : ?>
     <div class="entry-thumbnail">
         <?php the_post_thumbnail("large"); ?>
     </div>
 <?php endif; ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <?php if (!is_front_page()) : ?>
     <header class="entry-header clearfix">
 
         <?php if (is_single()) : ?>
@@ -54,6 +55,7 @@
 
 
     </header>
+    <?php endif; ?>
     <!-- .entry-header -->
 
     <?php if (is_search() || is_category() || is_tag() || is_archive()) : // Only display Excerpts for Search ?>
