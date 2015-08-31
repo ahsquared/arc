@@ -117,6 +117,10 @@ if (is_front_page()) {
                 ?>
             <?php endforeach;
         endif; ?>
+
+        <?php // the home page content ?>
+        <?php get_template_part( 'content', get_post_format() ); ?>
+
     </div>
     <?php endwhile; ?>
 </div>
