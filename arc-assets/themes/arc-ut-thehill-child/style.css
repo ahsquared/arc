@@ -1501,6 +1501,15 @@ h1, h2, h3 {
   border: 0 none;
   border-radius: 0; }
 
+#sidebar .sidebar-subtitle {
+  margin: 20px 15px 10px 15px; }
+
+#sidebar .sidebar-subtitle-2 {
+  color: #235d8a;
+  padding: 0 0 10px 0;
+  margin: 5px 15px;
+  line-height: 1.4; }
+
 .page-template-home .home-banner {
   color: #fff;
   text-align: center;

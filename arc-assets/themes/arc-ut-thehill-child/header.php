@@ -151,6 +151,7 @@
 
                     <div class="sidebar-subtitle">Children’s Mental Health<br>
                         Services Research Center</div>
+                    <h4 class="sidebar-subtitle-2">COLLEGE OF SOCIAL WORK</h4>
                     <?php get_template_part('library/partials/off-canvas', 'page'); ?>
 
                     <form role="search">
