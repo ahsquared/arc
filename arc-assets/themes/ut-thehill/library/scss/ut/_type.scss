@@ -37,7 +37,7 @@ a:active, a:focus, #megamenu button:active, #megamenu .home_button:active {
     background: linear-gradient($utrock, $utrock) center 1.09em no-repeat;
     background-size: 90%  1px;
     background-position: center bottom;
-    text-decoration: underline;
+    text-decoration: none;
    // background-repeat: repeat-x;
    &:hover {
     background-size: 100%  1px;

@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6,
   .h6 .small {
     font-weight: normal;
     line-height: 1;
-    color: #8a8c8f; }
+    color: #a7a9ac; }
 
 h1, .h1,
 h2, .h2,
@@ -88,10 +88,10 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 36px; }
+  font-size: 32px; }
 
 h2, .h2 {
-  font-size: 30px; }
+  font-size: 28px; }
 
 h3, .h3 {
   font-size: 24px; }
@@ -151,10 +151,10 @@ mark,
   text-transform: capitalize; }
 
 .text-muted {
-  color: #8a8c8f; }
+  color: #a7a9ac; }
 
 .text-primary {
-  color: #FF8200; }
+  color: #ff8200; }
 
 a.text-primary:hover {
   color: #cc6800; }
@@ -166,10 +166,10 @@ a.text-success:hover {
   color: #cd3f19; }
 
 .text-info {
-  color: #8a8c8f; }
+  color: #a7a9ac; }
 
 a.text-info:hover {
-  color: #707276; }
+  color: #8d8f93; }
 
 .text-warning {
   color: #ebea64; }
@@ -178,7 +178,7 @@ a.text-warning:hover {
   color: #e5e437; }
 
 .text-danger {
-  color: #754A7E; }
+  color: #754a7e; }
 
 a.text-danger:hover {
   color: #57375e; }
@@ -187,7 +187,7 @@ a.text-danger:hover {
   color: #fff; }
 
 .bg-primary {
-  background-color: #FF8200; }
+  background-color: #ff8200; }
 
 a.bg-primary:hover {
   background-color: #cc6800; }
@@ -219,7 +219,7 @@ a.bg-danger:hover {
 .page-header {
   padding-bottom: 11.5px;
   margin: 50px 0 25px;
-  border-bottom: 1px solid #f2f2f3; }
+  border-bottom: 1px solid #f6f6f6; }
 
 ul,
 ol {
@@ -278,7 +278,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #8a8c8f; }
+  border-bottom: 1px dotted #a7a9ac; }
 
 .initialism {
   font-size: 90%;
@@ -288,7 +288,7 @@ blockquote {
   padding: 12.5px 25px;
   margin: 0 0 25px;
   font-size: 17.5px;
-  border-left: 5px solid #f2f2f3; }
+  border-left: 5px solid #f6f6f6; }
   blockquote p:last-child,
   blockquote ul:last-child,
   blockquote ol:last-child {
@@ -299,7 +299,7 @@ blockquote {
     display: block;
     font-size: 80%;
     line-height: 1.8;
-    color: #8a8c8f; }
+    color: #a7a9ac; }
     blockquote footer:before,
     blockquote small:before,
     blockquote .small:before {
@@ -309,7 +309,7 @@ blockquote {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #f2f2f3;
+  border-right: 5px solid #f6f6f6;
   border-left: 0;
   text-align: right; }
   .blockquote-reverse footer:before,
@@ -337,10 +337,10 @@ address {
  * ----------------------------------------------------------------------------
  */
 a {
-  color: #FF8200;
+  color: #006c93;
   text-decoration: none; }
   a:visited {
-    color: #cc6800; }
+    color: #004760; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {

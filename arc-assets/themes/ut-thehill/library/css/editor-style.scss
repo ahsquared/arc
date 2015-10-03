@@ -10,8 +10,7 @@ Description: Used to style the TinyMCE editor.
 @import "../scss/ut/mixins";
 
 
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
-
+@import "../scss/bootstrap/_mixins.scss";
 
 
 
@@ -50,7 +49,7 @@ body {
 }
 
 
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/type";
+@import "../scss/bootstrap/_type";
 
 
 

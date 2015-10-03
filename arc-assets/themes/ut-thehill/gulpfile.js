@@ -47,7 +47,7 @@ gulp.task('iestyles', function() {
   gutil.log(gutil.colors.bgGreen('Compiling IE Styles'))
   gulp.src('library/css/ie.scss')
         .pipe(sass())
-        //.pipe(nmq(opts, '{width: 100px}'))
+        .pipe(nmq(opts, '{width: 100px}'))
         .pipe(livereload())
         .pipe(gulp.dest('library/css/'));
 });

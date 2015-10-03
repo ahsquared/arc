@@ -7772,6 +7772,8 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 }())
 ;
 (function($) {
+  var nivo_anim_speed = url_object.nivo_anim_speed;
+  var nivo_pause_time = url_object.nivo_pause_time;
   $(document).ready(function() {
 
     // Global funct
@@ -7785,8 +7787,9 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
     // ALERTS RSS Feed grabber
     function getAlertRSS() {
+      var seconds = new Date().getTime();
       $.ajax({
-        url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('http://www.utk.edu/rssfeeds/utalert.xml'),
+        url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('http://www.utk.edu/rssfeeds/utalert.xml?cachebust='+seconds),
         dataType : 'json',
         success  : function (data) {
           if (data.responseData.feed && data.responseData.feed.entries) {
@@ -7799,11 +7802,11 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
                 var date = e.publishedDate;
                 var orangeBar = $('#orange-bar');
                 orangeBar.before("<div id='utsafe'>
-                                    <div class='alert-icon'><i class='fa fa-exclamation-circle'></i></div>
+                                    <div class='alert-icon'></div>
                                     <div class='message'>
                                       <div class='alert-date'><date>"+date+"</date></div>
                                       <h1 class='alert-header'>"+title+"</h1>
-                                      <p class='alert-copy'>"+copy+"</p><a class='alertButton' href='"+link+"'>Read More</a>
+                                      <p class='alert-copy'>"+copy+"</p><a class='alertButton' href='http://www.utk.edu/status'>Read More</a>
                                     </div>
                                 </div>");
               }
@@ -8365,13 +8368,11 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
   // Slider for the featured slider
   $(window).load(function() {
+    $('.nivoSlider').css('display', 'block');
     $('#mainslider').nivoSlider({
           effect: 'fade',                 // Specify sets like: 'fold,fade,sliceDown'
-          slices: 15,                     // For slice animations
-          boxCols: 8,                     // For box animations
-          boxRows: 4,                     // For box animations
-          animSpeed: 500,                 // Slide transition speed
-          pauseTime: 3000,                // How long each slide will show
+          animSpeed: nivo_anim_speed,     // Slide transition speed
+          pauseTime: nivo_pause_time,                // How long each slide will show
           startSlide: 0,                  // Set starting Slide (0 index)
           directionNav: true,             // Next & Prev navigation
           controlNav: true,               // 1,2,3... navigation

@@ -1,12 +1,13 @@
 // Most form styling is handled by the default Bootstrap forms.
 // This is the special stuff.
+#page input[type="radio"] {
 
-
+  margin: 4px 1px 1px; // 3
+}
 
 // Gravity forms specific
 #page { // Wrapping this in an ID helps it overide the default stylesheet
   .gform_wrapper {
-    @extend .box-light;
     padding-top: 0;
     @include box-shadow(3px 3px 2px lighten($utrock,40%));
     .gfield {
@@ -35,7 +36,7 @@
     input[type="button"], input[type="submit"], input[type="reset"], input[type="file"] {
       @extend .btn;
     }
-    
+
     // Errors and Warnings
     
     .gfield_error {

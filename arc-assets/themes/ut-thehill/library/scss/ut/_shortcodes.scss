@@ -47,6 +47,12 @@ br.clear, .clearshortcode {
     margin-bottom: $line-height-computed;
     border-bottom: 1px solid $nav-tabs-border-color;
   }
+  .box, .box-light {
+    .tab-content {
+      border-bottom: 0;
+    }
+  }
+  
 }
 
 // Highlight boxes.
@@ -417,5 +423,6 @@ br.clear, .clearshortcode {
     &.right {
       margin-right: 0;
       float: right;
+      margin-left: $gutter-width;
     }
 }

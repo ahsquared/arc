@@ -2,7 +2,7 @@
 // Default options values
 $ut_options = array(
 	'parentunit_text' => '',
-	'give_place_text' => '',
+	'give_place_text' => 'batman',
 	'give_uri_text' => '',
 	'type_style' => 'sans',
 	'givingbar_status' => 'default',
@@ -12,7 +12,9 @@ $ut_options = array(
 	'published_date' => true,
 	'homepage_head' => true,
 	'nav_style' => 'dropnav',
-	'home_button' => true
+	'home_button' => true,
+	'nivo_anim_speed' => '500',
+	'nivo_pause_time' => '3000',
 );
 
 
@@ -221,6 +223,7 @@ function ut_theme_options_page() {
 	<form method="post" action="options.php">
 
 	<?php $settings = get_option( 'ut_options', $ut_options ); ?>
+
 	
 	<?php settings_fields( 'ut_theme_options' );
 	/* This function outputs some hidden fields required by the form,
@@ -336,13 +339,29 @@ function ut_theme_options_page() {
                 	<hr>
               	</td>
             </tr>
-
-
-
           </table>
 
-
-      		<table class="wp-list-table widefat fixed tags"><!-- Grab a hot cup of coffee, yes we're using tables! -->
+  				<?php _e( '<h3 class="title">Nivo Gallery Settings</h3>', 'ut-thehill' ); ?>
+  				<p><em>Speed is measured in milliseconds, ie 1000 == 1 second.</em></p>
+          <table class="wp-list-table fixed tags">
+            <tr>
+              <td><?php  
+	                _e( 'Animation Speed', 'ut-thehill' ); ?>
+	                <input id="ut_options[nivo_anim_speed]" class="regular-text" type="number" name="ut_options[nivo_anim_speed]" value="<?php if($settings['nivo_anim_speed']) { esc_attr_e( $settings['nivo_anim_speed'] ); } else { esc_attr_e( $ut_options['nivo_anim_speed'] ); } ?>" />
+                	<hr>
+              	</td>
+            </tr>
+            <tr>
+              <td><?php  
+	                _e( 'Pause Time', 'ut-thehill' ); ?>
+	                <input id="ut_options[nivo_pause_time]" class="regular-text" type="number" name="ut_options[nivo_pause_time]" value="<?php if($settings['nivo_pause_time']) { esc_attr_e( $settings['nivo_pause_time'] ); } else { esc_attr_e( $ut_options['nivo_pause_time'] ); } ?>" />
+              	</td>
+            </tr>
+          </table>
+          <br>
+        	<hr>
+        	<br>
+      		<table class="wp-list-table widefat fixed tags">
           	<tr valign="top"><th scope="row"><h3>Giving Link</h3></th>
             	<td>
               	<select id="givingbar_status" name="ut_options[givingbar_status]">
@@ -367,7 +386,7 @@ function ut_theme_options_page() {
                </th>
               <td>
                 <?php  //Input for Giving Bar: recipient of gift & custom URL
-                _e( 'Who are you giving to?', 'ut-responsive' ); ?>
+                _e( 'Who are you giving to?', 'ut-thehill' ); ?>
                 <input id="ut_options[give_place_text]" class="regular-text" type="text" name="ut_options[give_place_text]" value="<?php esc_attr_e( $settings['give_place_text'] ); ?>" />
               </td>
             </tr>
@@ -412,6 +431,8 @@ function ut_validate_options( $input ) {
 	
 	// We strip all tags from the text field, to avoid vulnerablilties like XSS
 	$input['give_place_text'] = wp_filter_nohtml_kses( $input['give_place_text'] );
+	$input['nivo_anim_speed'] = wp_filter_nohtml_kses( $input['nivo_anim_speed'] );
+	$input['nivo_pause_time'] = wp_filter_nohtml_kses( $input['nivo_pause_time'] );
 
 	
 	// We strip all tags from the text field, to avoid vulnerablilties like XSS

@@ -11,6 +11,10 @@
 	    clear: both;
 	}
 	.alert-icon {
+		width: 138px;
+		height: 125px;
+		background: url(images/interface/icon-alert.png) no-repeat center 9px;
+		background-size: 90px 90px; 
 		@media (min-width: $screen-sm) {
 			float: left;
 		  padding-right: 1%;

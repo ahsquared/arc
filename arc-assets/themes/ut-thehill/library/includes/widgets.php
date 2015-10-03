@@ -9,65 +9,79 @@
 // Create custom Highlight box widget
 // --------------------------------------------------
 class UT_Highlight extends WP_Widget {
-  function UT_Highlight() {
-          $widget_ops = array(
-                    'classname' => 'UT_Highlight',
-                    'description' => 'A highlight box for text, HTML, PHP, Javascript, and shortcodes'
-					);
 
-          $this->WP_Widget(
-                    'UT_Highlight',
-                    'UT Highlight Box',
-                    $widget_ops
-					);
+	function __construct() {
+		parent::__construct(
+		// Base ID of your widget
+		'UT_Highlight', 
+
+		// Widget name will appear in UI
+		__('UT Highlight Box', 'UT_Highlight'), 
+
+		// Widget description
+		array( 'description' => __( 'A highlight box for text, HTML, PHP, Javascript, and shortcodes', 'UT_Highlight' ), ) 
+		);
 	}
-  function widget($args, $instance) { // widget sidebar output
-                    extract($args, EXTR_SKIP);
+	
+	
+	
+	public function widget( $args, $instance ) {
 
-					$text = apply_filters('widget_text', $instance['text'], $instance);
-					$background = $instance['background'];
+		/** This filter is documented in wp-includes/default-widgets.php */
+		$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
 
-					echo    "<div class='box-light widget ".$background."'>"."\n";
-		            echo    '<aside   class="widget %2$s">';
+		/**
+		 * Filter the content of the Text widget.
+		 *
+		 * @since 2.3.0
+		 *
+		 * @param string    $widget_text The widget content.
+		 * @param WP_Widget $instance    WP_Widget instance.
+		 */
+		$text = apply_filters( 'widget_text', empty( $instance['text'] ) ? '' : $instance['text'], $instance );
 
-
-
-			        // Parse the text through PHP
-			        ob_start();
-			        eval('?>' . $text);
-			        $text = ob_get_contents();
-			        ob_end_clean();
-
-			        // Run text through do_shortcode
 			        $text = do_shortcode($text);
 
-			        // Echo the content
-			        echo wpautop($text);
+		$background = $instance['background'];
 
-		            //echo    $after_widget;
-		            echo   '</aside></div><br class="clear">'."\n";
-    }
-    function update($new_instance, $old_instance) {
-            $instance = $old_instance;
-            if ( current_user_can('unfiltered_html') )
-            	$instance['text'] =  $new_instance['text'];
-			else
-            	$instance['text'] = wp_filter_post_kses($new_instance['text']);
+		echo $args['before_widget'];
+
+		if ( ! empty( $title ) ) {
+			echo $args['before_title'] . $title . $args['after_title'];
+		} 
+		echo    "<div class='box-light widget ".$background."'>"."\n";
+    echo    '<aside   class="widget">';
+		?>
+		
+			<?php echo !empty( $instance['filter'] ) ? wpautop( $text ) : $text; ?></aside></div>
+		<?php
+		echo $args['after_widget'];
+	}
+
+	public function update( $new_instance, $old_instance ) {
+		$instance = $old_instance;
+		$instance['title'] = strip_tags($new_instance['title']);
 			$instance['background'] = $new_instance['background'];
-			return $instance;
-    }
-    function form($instance) {
+		if ( current_user_can('unfiltered_html') )
+			$instance['text'] =  $new_instance['text'];
+		else
+			$instance['text'] = stripslashes( wp_filter_post_kses( addslashes($new_instance['text']) ) ); // wp_filter_post_kses() expects slashed
+		$instance['filter'] = ! empty( $new_instance['filter'] );
+		$instance['background'] = $new_instance['background'];
+		return $instance;
+	}
 
-			$text = format_to_edit($instance['text']);
-			$background = $instance['background'];
+	public function form( $instance ) {
+		$instance = wp_parse_args( (array) $instance, array( 'title' => '', 'text' => '' ) );
+		$title = strip_tags($instance['title']);
+		$text = esc_textarea($instance['text']);
+    $background = $instance['background'];
+?>
+		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Highlight Box:'); ?></label></p>
 
-
-		    echo '<p><label for="'.$this->get_field_id('text').'">'._e('Text:').'</label>';
-            echo '<textarea rows="12" id="'.$this->get_field_id('text').'" name="'.$this->get_field_name('text').'" class="widefat">'.$text.'</textarea></p>';
-            echo '<p><label for="'.$this->get_field_id('background').'">'._e('Highlight Color:').'</label></p>';
-			?>
+		<textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('text'); ?>"><?php echo $text; ?></textarea>
 			<select id="<?php echo $this->get_field_id('background');?>" name="<?php echo $this->get_field_name('background');?>" >
-        <option <?php if ( 'box' == $instance['background'] ) echo ' selected'; ?> value="box">Default</option>
+        <option <?php if ( 'white' == $instance['background'] ) echo ' selected'; ?> value="white">Default (White)</option>
         <option <?php if ( 'smokey' == $instance['background'] ) echo ' selected'; ?> value="smokey">Smokey</option>
         <option <?php if ( 'orange' == $instance['background'] ) echo ' selected'; ?> value="orange">Orange</option>
         <option <?php if ( 'limestone' == $instance['background'] ) echo ' selected'; ?> value="limestone">Limestone</option>
@@ -87,13 +101,18 @@ class UT_Highlight extends WP_Widget {
         <option <?php if ( 'buckskin' == $instance['background'] ) echo ' selected'; ?> value="buckskin">Buckskin</option>
         <option <?php if ( 'energy' == $instance['background'] ) echo ' selected'; ?> value="energy">Energy</option>
 			</select>
-			<?php
-    }
+		<p><input id="<?php echo $this->get_field_id('filter'); ?>" name="<?php echo $this->get_field_name('filter'); ?>" type="checkbox" <?php checked(isset($instance['filter']) ? $instance['filter'] : 0); ?> />&nbsp;<label for="<?php echo $this->get_field_id('filter'); ?>"><?php _e('Automatically add paragraphs'); ?></label></p>
+
+
+
+<?php
+	}
 }
-register_widget('UT_Highlight');
+
+register_widget('UT_Highlight'); 
 
 
-
+  
 
 // Unregister a few of the default WP Widgets
 // --------------------------------------------------
@@ -110,7 +129,7 @@ add_action('widgets_init', 'unregister_default_wp_widgets', 1);
 
 function ut_dashboard_widget() {
 	require_once ( get_template_directory() . '/library/includes/widget-themeupdates.php' );
-}
+} 
 
 
 
@@ -118,14 +137,14 @@ function ut_dashboard_widget() {
 // --------------------------------------------------
 
 function add_dashboard_utwidget() {
-	wp_add_dashboard_widget('ut-theme-update-widget', 'UT WordPress Theme Updates', 'ut_dashboard_widget');
+	wp_add_dashboard_widget('ut-theme-update-widget', 'UT WordPress Theme Updates', 'ut_dashboard_widget');	
 	global $wp_meta_boxes;
-
-	// Get the regular dashboard widgets array
+	
+	// Get the regular dashboard widgets array 
 	// (which has our new widget already but at the end)
 
 	$normal_dashboard = $wp_meta_boxes['dashboard']['normal']['core'];
-
+	
 	// Backup and delete our new dashbaord widget from the end of the array
 
 	$widget_backup = array('ut-theme-update-widget' => $normal_dashboard['ut-theme-update-widget']);
@@ -135,10 +154,10 @@ function add_dashboard_utwidget() {
 
 	$sorted_dashboard = array_merge($widget_backup, $normal_dashboard);
 
-	// Save the sorted array back into the original metaboxes
+	// Save the sorted array back into the original metaboxes 
 
 	$wp_meta_boxes['dashboard']['normal']['core'] = $sorted_dashboard;
-}
+} 
 
 // Hook into the 'wp_dashboard_setup' action to register our other functions
 

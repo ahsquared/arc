@@ -4,6 +4,14 @@
 
 ***
 
+Version: 1.0.3
+Updated: Sept 18, 2015
+- A few updates for accessiblity in the JS and CSS.
+- Bug fix on the search form in the HTML templates.
+- The WordPress theme updated to accomodate changes in WordPress 4.3.
+- Various other rendering bugs fixed.
+***
+
 Version: 1.0.2
 Updated: August 3, 2015
 - Alignment issues on a handful of interface elements.

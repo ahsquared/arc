@@ -32,15 +32,26 @@ function utthehill_scripts_styles() {
 	// FOR TESTING
 	// wp_register_script( 'utthehill-utk', get_template_directory_uri() . '/library/js/build/utk-build.js', array( 'jquery' ), '2015-05-13', true );
 	// FOR PROD
-	wp_register_script( 'utthehill-utk', get_template_directory_uri() . '/library/js/min/utk-min.js', array( 'jquery' ), '2015-05-20', true );
+	wp_register_script( 'utthehill-utk', get_template_directory_uri() . '/library/js/min/utk-min.js', array( 'jquery' ), '2015-09-02', true );
 
 
 	// Setup some vars to pass to js
 	$tempDirectory = get_template_directory_uri();
 	global $blog_id;
 	$siteId = $blog_id;
+	$settings = get_option( 'ut_options');
+	if (!isset($settings['nivo_anim_speed']) || $settings['nivo_anim_speed'] == '' ) { 
+		$nivoAnimSpeed = '500';
+	} else {
+		$nivoAnimSpeed = $settings['nivo_anim_speed'];
+	}
+	if (!isset($settings['nivo_pause_time']) || $settings['nivo_pause_time'] == '' ) { 
+		$nivoPauseTime = '3000';
+	} else {
+		$nivoPauseTime = $settings['nivo_pause_time'];
+	}
 	$contentArray = generateJson();
-	$translation_array = array( 'templateDirectory' => $tempDirectory, 'siteId' => $siteId, 'contentArray' => $contentArray);
+	$translation_array = array( 'templateDirectory' => $tempDirectory, 'siteId' => $siteId, 'contentArray' => $contentArray, 'nivo_anim_speed' => $nivoAnimSpeed, 'nivo_pause_time' => $nivoPauseTime);
 	wp_localize_script( 'utthehill-utk', 'url_object', $translation_array );
 
 	// run it Lola
@@ -49,7 +60,7 @@ function utthehill_scripts_styles() {
 
 	
 	// Loads our main stylesheet.
-	wp_enqueue_style( 'utthehill-style', get_stylesheet_uri(), array(), '2015-05-20' );
+	wp_enqueue_style( 'utthehill-style', get_stylesheet_uri(), array(), '2015-09-02' );
 
 	// Loads the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'utthehill-ie', get_template_directory_uri() . '/library/css/ie.css', array( 'utthehill-style' ), '2015-05-20' );

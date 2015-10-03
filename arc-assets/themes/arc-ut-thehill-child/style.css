@@ -1348,6 +1348,9 @@ h1, h2, h3 {
   color: #41acff;
   font-weight: 400; }
 
+.supersearch.form-control.tt-hint {
+  display: none; }
+
 #page,
 .sidebar-offcanvas,
 #megamenu .home_button,
@@ -1509,6 +1512,10 @@ h1, h2, h3 {
   padding: 0 0 10px 0;
   margin: 5px 15px;
   line-height: 1.4; }
+
+.category .entry-header {
+  background: #cedbdf;
+  padding: 20px 0 20px 20px; }
 
 .page-template-home .home-banner {
   color: #fff;

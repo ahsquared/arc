@@ -20,7 +20,7 @@
            $settings = get_option( 'ut_options');
               if ( 'true' != $settings['home_button'] ) { ?> 
               <li>
-                <a id="drop2" tabindex="2" class="home_button" href="<?php echo esc_url( home_url( '/' ) ); ?>"  role="button"  >Home <i class="icon-fa-home pull-right"></i></a>
+                <a id="drop2" tabindex="4" class="home_button" href="<?php echo esc_url( home_url( '/' ) ); ?>"  role="button"  >Home <i class="icon-fa-home pull-right"></i></a>
               </li>
           <?php }    ?>
 
@@ -40,7 +40,7 @@
            $settings = get_option( 'ut_options');
               if ( 'true' != $settings['home_button'] ) { ?> 
               <li>
-                <a class="home_button" href="<?php echo esc_url( home_url( '/' ) ); ?>" tabindex="2"  role="button"  >Home <i class="icon-fa-home pull-right"></i></a>
+                <a class="home_button" href="<?php echo esc_url( home_url( '/' ) ); ?>" tabindex="4"  role="button"  >Home <i class="icon-fa-home pull-right"></i></a>
               </li>
           <?php }   
 
@@ -49,7 +49,7 @@
 
         if ( has_nav_menu( 'menu-one' ) ) { ?>
           <li class="top-menu-item">
-            <button id="drop2" class="list-item-button" aria-haspopup="true" role="button" tabindex="3"><?php echo gm_get_theme_menu_name('menu-one'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
+            <button id="drop2" class="list-item-button" aria-haspopup="true" role="button" tabindex="5"><?php echo gm_get_theme_menu_name('menu-one'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
             <div class="megamenu-sub" id="menu-one"  aria-labelledby="drop2" aria-expanded="false">
               <button class="menu-back btn"  data-toggle="dropdown"  role="button"><i class="icon-fa-chevron-left"></i> <span class="back">Back</span></button>
               <h3><?php echo gm_get_theme_menu_name('menu-one'); ?> </h3>
@@ -65,7 +65,7 @@
         // If there is a menu-two, then show it.
         if ( has_nav_menu( 'menu-two' ) ) { ?>
           <li class="top-menu-item">
-            <button id="drop3" class="list-item-button" aria-haspopup="true" role="button" tabindex="4"><?php echo gm_get_theme_menu_name('menu-two'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
+            <button id="drop3" class="list-item-button" aria-haspopup="true" role="button" tabindex="6"><?php echo gm_get_theme_menu_name('menu-two'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
             <div class="megamenu-sub dropdown-menu" id="menu-two"  aria-labelledby="drop3" aria-expanded="false">
               <button  class="menu-back btn" data-toggle="dropdown" role="button" ><i class="icon-fa-chevron-left"></i> <span class="back">Back</span></button>
               <h3><?php echo gm_get_theme_menu_name('menu-two'); ?> </h3>
@@ -81,7 +81,7 @@
         // If there is a menu-three, then show it.
         if ( has_nav_menu( 'menu-three' ) ) { ?>
           <li class="top-menu-item">
-            <button  id="drop4" class="list-item-button" aria-haspopup="true" role="button" tabindex="5"><?php echo gm_get_theme_menu_name('menu-three'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
+            <button  id="drop4" class="list-item-button" aria-haspopup="true" role="button" tabindex="7"><?php echo gm_get_theme_menu_name('menu-three'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
             <div class="megamenu-sub dropdown-menu" id="menu-three"  aria-labelledby="drop4" aria-expanded="false">
               <button class="menu-back btn"  data-toggle="dropdown" aria-haspopup="true" role="button"><i class="icon-fa-chevron-left"></i> <span class="back">Back</span></button>
               <h3><?php echo gm_get_theme_menu_name('menu-three'); ?> </h3>
@@ -97,7 +97,7 @@
         // If there is a menu-four, then show it.
         if ( has_nav_menu( 'menu-four' ) ) { ?>
           <li class="top-menu-item">
-            <button  id="drop5" class="list-item-button" aria-haspopup="true" role="button" tabindex="6"><?php echo gm_get_theme_menu_name('menu-four'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
+            <button  id="drop5" class="list-item-button" aria-haspopup="true" role="button" tabindex="8"><?php echo gm_get_theme_menu_name('menu-four'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
             <div class="megamenu-sub dropdown-menu" id="menu-four" aria-labelledby="drop5" aria-expanded="false">
               <button  class="menu-back btn"  data-toggle="dropdown" role="button"><i class="icon-fa-chevron-left"></i> <span class="back">Back</span></button>
               <h3><?php echo gm_get_theme_menu_name('menu-four'); ?> </h3>
@@ -113,7 +113,7 @@
         // If there is a menu-five, then show it.
         if ( has_nav_menu( 'menu-five' ) ) { ?>
           <li class="top-menu-item">
-            <button  id="drop6"  class="list-item-button" aria-haspopup="true" role="button" tabindex="7"><?php echo gm_get_theme_menu_name('menu-five'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
+            <button  id="drop6"  class="list-item-button" aria-haspopup="true" role="button" tabindex="9"><?php echo gm_get_theme_menu_name('menu-five'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
               <div class="megamenu-sub" id="menu-five"  aria-labelledby="drop6" aria-expanded="false" >
                 <button  class="menu-back btn"  data-toggle="dropdown" role="button"><i class="icon-fa-chevron-left"></i> <span class="back">Back</span></button>
                 <h3><?php echo gm_get_theme_menu_name('menu-five'); ?> </h3>
@@ -130,7 +130,7 @@
         // If there is a menu-six, then show it.
         if ( has_nav_menu( 'menu-six' ) ) { ?>
           <li class="top-menu-item">
-            <button id="drop7"  class="list-item-button" aria-haspopup="true" role="button" tabindex="8"><?php echo gm_get_theme_menu_name('menu-six'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
+            <button id="drop7"  class="list-item-button" aria-haspopup="true" role="button" tabindex="10"><?php echo gm_get_theme_menu_name('menu-six'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
             <div class="megamenu-sub" id="menu-six"  aria-labelledby="drop7" aria-expanded="false" >
               <button class="menu-back btn"   data-toggle="dropdown" role="button"><i class="icon-fa-chevron-left"></i> <span class="back">Back</span></button>
               <h3><?php echo gm_get_theme_menu_name('menu-six'); ?> </h3>
@@ -147,7 +147,7 @@
         // If there is a menu-seven, then show it.
         if ( has_nav_menu( 'menu-seven' ) ) { ?>
           <li class="top-menu-item">
-            <button id="drop8" class="list-item-button" aria-haspopup="true" role="button" tabindex="9"><?php echo gm_get_theme_menu_name('menu-seven'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
+            <button id="drop8" class="list-item-button" aria-haspopup="true" role="button" tabindex="11"><?php echo gm_get_theme_menu_name('menu-seven'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
             <div class="megamenu-sub" id="menu-seven"  aria-labelledby="drop8" aria-expanded="false">
               <button  class="menu-back btn"  data-toggle="dropdown"  role="button"><i class="icon-fa-chevron-left"></i> <span class="back">Back</span></button>
               <h3><?php echo gm_get_theme_menu_name('menu-seven'); ?> </h3>
@@ -164,7 +164,7 @@
         // If there is a menu-eight, then show it.
         if ( has_nav_menu( 'menu-eight' ) ) { ?>
           <li class="top-menu-item">
-            <button  id="drop9" class="list-item-button" aria-haspopup="true" role="button" tabindex="10"><?php echo gm_get_theme_menu_name('menu-eight'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
+            <button  id="drop9" class="list-item-button" aria-haspopup="true" role="button" tabindex="12"><?php echo gm_get_theme_menu_name('menu-eight'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
             <div class="megamenu-sub" id="menu-eight"  aria-labelledby="drop9" aria-expanded="false">
               <button  class="menu-back btn"  data-toggle="dropdown" role="button"><i class="icon-fa-chevron-left"></i> <span class="back">Back</span></button>
                <h3><?php echo gm_get_theme_menu_name('menu-eight'); ?> </h3>
@@ -179,7 +179,7 @@
         // If there is a menu-nine, then show it.
         if ( has_nav_menu( 'menu-nine' ) ) { ?>
           <li class="top-menu-item">
-            <button  id="drop10" class="list-item-button" aria-haspopup="true" role="button" tabindex="11"><?php echo gm_get_theme_menu_name('menu-nine'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
+            <button  id="drop10" class="list-item-button" aria-haspopup="true" role="button" tabindex="13"><?php echo gm_get_theme_menu_name('menu-nine'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
             <div class="megamenu-sub" id="menu-nine"  aria-labelledby="drop10" aria-expanded="false">
               <button  class="menu-back btn"  data-toggle="dropdown" role="button"><i class="icon-fa-chevron-left"></i> <span class="back">Back</span></button>
                <h3><?php echo gm_get_theme_menu_name('menu-nine'); ?> </h3>
@@ -194,7 +194,7 @@
         // If there is a menu-ten, then show it.
         if ( has_nav_menu( 'menu-ten' ) ) {?>
           <li class="top-menu-item">
-            <button  id="drop11" class="list-item-button" aria-haspopup="true" role="button" tabindex="12"><?php echo gm_get_theme_menu_name('menu-ten'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
+            <button  id="drop11" class="list-item-button" aria-haspopup="true" role="button" tabindex="14"><?php echo gm_get_theme_menu_name('menu-ten'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
             <div class="megamenu-sub" id="menu-ten"  aria-labelledby="drop11" aria-expanded="false">
               <button  class="menu-back btn"  data-toggle="dropdown" role="button"><i class="icon-fa-chevron-left"></i> <span class="back">Back</span></button>
                <h3><?php echo gm_get_theme_menu_name('menu-ten'); ?> </h3>
@@ -211,7 +211,7 @@
         // If there is a menu-eleven, then show it.
         if ( has_nav_menu( 'menu-eleven' ) ) { ?>
           <li class="top-menu-item">
-            <button  id="drop12" class="list-item-button" aria-haspopup="true" role="button" tabindex="13"><?php echo gm_get_theme_menu_name('menu-eleven'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
+            <button  id="drop12" class="list-item-button" aria-haspopup="true" role="button" tabindex="15"><?php echo gm_get_theme_menu_name('menu-eleven'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
             <div class="megamenu-sub" id="menu-eleven"  aria-labelledby="drop12" aria-expanded="false">
               <button  class="menu-back btn"  data-toggle="dropdown" aria-haspopup="true" role="button" ><i class="icon-fa-chevron-left"></i> <span class="back">Back</span></button>
               <h3><?php echo gm_get_theme_menu_name('menu-eleven'); ?> </h3>
@@ -227,7 +227,7 @@
         // If there is a menu-twelve, then show it.
         if ( has_nav_menu( 'menu-twelve' ) ) { ?>
           <li class="top-menu-item">
-            <button id="drop13"  class="list-item-button" aria-haspopup="true" role="button" tabindex="14"><?php echo gm_get_theme_menu_name('menu-twelve'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
+            <button id="drop13"  class="list-item-button" aria-haspopup="true" role="button" tabindex="16"><?php echo gm_get_theme_menu_name('menu-twelve'); ?> <i class="icon-fa-chevron-right pull-right"></i></button>
             <div class="megamenu-sub" id="menu-twelve"  aria-labelledby="drop13" aria-expanded="false">
               <button  class="menu-back btn"  data-toggle="dropdown" aria-haspopup="true" role="button" ><i class="icon-fa-chevron-left"></i> <span class="back">Back</span></button>
               <h3><?php echo gm_get_theme_menu_name('menu-twelve'); ?> </h3>

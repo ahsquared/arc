@@ -86,7 +86,7 @@
 					<?php 
             if($parentunit && $parentunit != "" && $parentunitlink && $parentunitlink != "") {
               echo "<a href='".$parentunitlink."'><i>".$parentunit."</i></a><br>";
-            }elseif($parentunit && $parentunit != "") {
+            } elseif($parentunit && $parentunit != "") {
   						echo "<i>" . $parentunit . "</i><br>";
   					}
 					?>
@@ -151,14 +151,26 @@
 
     <div id="toolkit">
 
-													
-                    <form id="utk_seek" name="utk_seek" method="post" accept-charset="iso-8859-1" action="http://www.utk.edu/masthead/query.php">
-  					        <div class="form-group">
-  					          <input tabindex="1" type="text" class="form-control" placeholder="Search" role="search" aria-label="Site Search">
-                      <input type="hidden" name="qtype" value="site_utk">  <!-- To turn this into a site-specific search, change the value of this element to: "site_utk:YOURURL.utk.edu" -->
- 					        </div>        <button type="submit" class="btn btn-orange">Go</button>
 
-  					      </form>          <br>
+ 
+<form method="post" action="http://google.tennessee.edu/search">
+    <div class="form-group">
+       <input type="text" class="form-control" name="q"  maxlength="256" onfocus="if(this.value == 'Search utk.edu') { this.value = ''; }" value="Search utk.edu">
+    </div>
+    <input type="submit" name="btnG" class="btn btn-orange"  value="Go">
+
+    <input type="hidden" name="output" value="xml_no_dtd">
+    <input type="hidden" name="oe" value="UTF-8">
+    <input type="hidden" name="ie" value="UTF-8">
+    <input type="hidden" name="ud" value="1">
+    <input type="hidden" name="site" value="Knoxville">
+    <input type="hidden" name="client" value="utk_translate_frontend">
+    <input type="hidden" name="entqr" value="3">
+    <!--    <input type="hidden" name="sitesearch" value="utk.edu" /> -->
+    <input type="hidden" name="qtype" class="searchtext" value="utk" title="search type">
+    <input type="hidden" name="proxystylesheet" value="utk_translate_frontend">
+</form>
+  					                <br>
       <nav  role="navigation">
           <ul>
             <li><a href="http://www.utk.edu/events/">Events</a></li>
@@ -170,37 +182,7 @@
           </ul>  
           <ul>
             <li><a href="http://www.utk.edu/admissions/">Apply</a></li>
-            <?php 
-            
-            $options = get_option('utresponsive_theme_options');
-            if (($options['giving_radioinput']) == 'default')
-            
-            // If we have the default giving bar
-            { echo '
-            <li>
-              <a href="http://giveto.utk.edu">Give</a>
-            </li>
-            ';}
-            
-            
-            // NO GIVING BAR
-            else if (($options['giving_radioinput']) == 'off')
-            { echo '';}
-            
-            // If CUSTOMIZED
-            else if (($options['giving_radioinput']) == 'on')
-            { echo '
-            <li>
-            <a href="'.$options['sometextlink'].'">Give to '.$options['sometext'].'. </a>
-            </li>
-            ';}
-            else 
-            { echo '
-            <li>
-            <a href="http://giveto.utk.edu">Give to UT</a>
-            </li>
-            ';}
-            ?>
+              <li><a href="http://giveto.utk.edu">Give to UT</a></li>
           </ul>  
       </nav>
     </div>

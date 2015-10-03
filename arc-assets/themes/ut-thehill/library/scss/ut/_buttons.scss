@@ -147,7 +147,7 @@ input[type="button"] {
 
 // Alternate buttons
 // --------------------------------------------------
-.site-content  {
+.site-content, .widget  {
   a, p a, li a, dd a {
     &.btn {
       background: $white;
@@ -178,7 +178,12 @@ input[type="button"] {
       @include button-color($utsunsphere);
     }
     &.btn-orange {
-      @include button-color($utorange);
+    background-color: $utorange;
+    // border-color: darken($btn-color, 20%);
+    border: 0;
+    &:hover {
+    	background-color: $utsmokey;
+    }
       color: $white;
     }
     &.btn-smokey {

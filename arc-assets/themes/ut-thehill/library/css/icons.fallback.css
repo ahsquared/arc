@@ -12,13 +12,6 @@ h3.killer-logo a {
 
 
 
-body.smokey h3.killer-logo, body.valley h3.killer-logo, body.torch h3.killer-logo, body.globe h3.killer-logo, body.valley h3.killer-logo, body.river h3.killer-logo, body.leconte h3.killer-logo, body.rock h3.killer-logo, body.regalia h3.killer-logo, body.legacy h3.killer-logo, body.buckskin h3.killer-logo, body.switchgrass h3.killer-logo, body.energy h3.killer-logo  {
-	background-image: url('png/logo-main-ondark.png');
-	background-repeat: no-repeat;
-}
-
-
-
 .icon-fa-cal {
 	background-image: url('png/fa-cal.png');
 	background-repeat: no-repeat;
@@ -80,5 +73,46 @@ body.smokey h3.killer-logo, body.valley h3.killer-logo, body.torch h3.killer-log
 
 .icon-fa-user {
 	background-image: url('png/fa-user.png');
+	background-repeat: no-repeat;
+}
+
+
+.glyphicon-check {
+	background-image: url('png/check-circle-smokey.png');
+	background-repeat: no-repeat;
+}
+
+.glyphicon-arrow-right {
+	background-image: url('png/chevron-right-circle-smokey.png');
+	background-repeat: no-repeat;
+}
+
+.glyphicon-chevron-right {
+	background-image: url('png/chevron-right-smokey.png');
+	background-repeat: no-repeat;
+}
+
+.glyphicon-download {
+	background-image: url('png/download-smokey.png');
+	background-repeat: no-repeat;
+}
+
+.glyphicon-info-sign {
+	background-image: url('png/info-smokey.png');
+	background-repeat: no-repeat;
+}
+
+.glyphicon-question-sign {
+	background-image: url('png/question-sign-smokey.png');
+	background-repeat: no-repeat;
+}
+
+.glyphicon-arrow-left {
+	background-image: url('png/chevron-left-circle-smokey.png');
+	background-repeat: no-repeat;
+}
+
+.glyphicon-chevron-left {
+	background-image: url('png/chevron-left-smokey.png');
 	background-repeat: no-repeat;
 }

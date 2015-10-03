@@ -49,10 +49,10 @@ body {
 
 .site {
   right: 0;
+
   @media (min-width: $screen-md) {
     right: auto;
     }
-
   &.active {
     right: 100%; /* 6 columns */
     #sidebar {
@@ -90,6 +90,12 @@ body {
     overflow: visible;
     margin: 0;
     border: 0;
+  }
+  &.inactive {
+    display: none;
+    @media (min-width: $screen-md) {
+    display: block;
+      }
   }
   nav {
     float: left;
@@ -145,4 +151,5 @@ body {
   @media (min-width: 1400px) {
       max-width: 420px;
   }
+  
 }
