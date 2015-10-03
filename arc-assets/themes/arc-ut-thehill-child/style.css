@@ -1517,6 +1517,11 @@ h1, h2, h3 {
   background: #cedbdf;
   padding: 20px 0 20px 20px; }
 
+.category .category-filter {
+  overflow: hidden; }
+  .category .category-filter .checkbox + .checkbox {
+    margin-top: 10px; }
+
 .page-template-home .home-banner {
   color: #fff;
   text-align: center;

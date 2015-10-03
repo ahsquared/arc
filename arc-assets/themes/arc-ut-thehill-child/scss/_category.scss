@@ -3,4 +3,10 @@
 		background: #cedbdf;
 		padding: 20px 0 20px 20px;
 	}
+	.category-filter {
+		overflow: hidden;
+		.checkbox + .checkbox {
+			margin-top: 10px;
+		}
+	}
 }

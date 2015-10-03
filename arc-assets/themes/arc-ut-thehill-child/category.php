@@ -58,13 +58,26 @@ get_header(); ?>
 
                 foreach ($categories as $category):
                     ?>
-                    <div class="checkbox">
+                    <div class="checkbox col-xs-6 col-sm-4">
                         <label>
-                            <input type="checkbox"
-                                   class="category-<?php echo $category->category_nicename ?>"> <?php echo $category->name ?>
+                            <input type="checkbox" class="category-filter-checkbox" checked="checked"
+                                   data-category="category-<?php echo $category->category_nicename ?>"> <?php echo $category->name ?>
                         </label>
                     </div>
                 <?php endforeach; ?>
+                <div class="row"></div>
+                <div class="checkbox col-xs-6 col-sm-4">
+                    <label>
+                        <input type="checkbox" checked="checked"
+                               data-category="category-all"> Check all
+                    </label>
+                </div>
+                <div class="checkbox col-xs-6 col-sm-4">
+                    <label>
+                        <input type="checkbox"
+                               data-category="category-none"> Uncheck all
+                    </label>
+                </div>
             </div>
             <div class="articles">
                 <?php /* The loop */ ?>
