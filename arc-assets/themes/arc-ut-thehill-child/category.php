@@ -78,6 +78,8 @@ get_header(); ?>
                                data-category="category-none"> Uncheck all
                     </label>
                 </div>
+                <div class="row"></div>
+                <div class="category-filter-warning alert alert-warning">Please select a category to show articles</div>
             </div>
             <div class="articles">
                 <?php /* The loop */ ?>

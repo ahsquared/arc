@@ -1,8 +1,20 @@
 (function filterCategories() {
     $(".category-filter").on("change", "input", function filterCategories() {
-        var categoryChecks = $(".category-filter input:checked"),
+        var categoryChecks = $(".category-filter .category-filter-checkbox:checked"),
             categories = [],
             articles = $(".articles article");
+
+        // make an array of all selected categories
+        categoryChecks.each(function () {
+            categories.push($(this).attr("data-category"));
+        });
+
+        // show a help message if no categories selected
+        if (categories.length === 0) {
+            $(".category-filter-warning").show();
+        } else {
+            $(".category-filter-warning").hide();
+        }
 
         if ($(this).prop("checked")) {
             if ($(this).attr("data-category") === "category-all") {
@@ -14,14 +26,13 @@
                 // uncheck all boxes and hide all articles
                 articles.hide();
                 $(".category-filter input").prop("checked", false);
+                $(".category-filter-warning").show();
                 return;
             }
         } else {
             $('[data-category="category-all"]').prop("checked", false);
         }
-        categoryChecks.each(function () {
-            categories.push($(this).attr("data-category"));
-        });
+
         // console.log(categoryChecks, categories);
         articles.hide();
         articles.each(function () {
