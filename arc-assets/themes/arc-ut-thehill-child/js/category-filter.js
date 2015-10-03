@@ -1,5 +1,9 @@
 (function filterCategories() {
-    $(".category-filter").on("change", "input", function filterCategories() {
+    var categoryFilter = $(".category-filter");
+    if (categoryFilter.length === 0) {
+        return;
+    }
+    categoryFilter.on("change", "input", function filterCategories() {
         var categoryChecks = $(".category-filter .category-filter-checkbox:checked"),
             categories = [],
             articles = $(".articles article");
