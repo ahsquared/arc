@@ -66,57 +66,57 @@ if (is_front_page()) {
     <!-- .entry-header -->
 
     <div class="home-content content-start">
-        <?php
-        $categories = get_field('categories_to_display');
-
-        if ($categories):
-            foreach ($categories as $category): ?>
-                <div class="clearfix">
-                    <h1><?php echo $category->name ?></h1>
-                    <?php // query the posts by category and sort by sort index
-                    $the_query = new WP_Query(array(
-                        'category_name' => $category->name,
-                        'post_status' => 'publish, future',
-                        'meta_key' => 'sort_index',
-                        'orderby' => 'meta_value_num',
-                        'order' => 'ASC'
-                    )); ?>
-                    <?php //query_posts('category_name=leaders&post_status=publish,future');
-                    ?>
-                    <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) :
-                        $the_query->the_post(); ?>
-                        <div class="col-sm-6">
-                            <?php if (has_post_thumbnail()) : // check if the post has a Post Thumbnail assigned to it.
-                                ?>
-                                <div class="category-post-image">
-                                    <?php the_post_thumbnail(); ?>
-                                </div>
-                            <?php endif; ?>
-
-                            <div class="category-post">
-                                <h2><a href="<?php the_permalink(); ?>"><?php
-                                        if (get_field('title_part')) {
-                                            the_field('title_part');
-                                        } else {
-                                            the_title();
-                                        }
-                                        ?></a></h2>
-
-                                <?php the_field('summary'); ?>
-                            </div>
-                            <div class="read-more">
-                                <button class="btn btn-link">Read more <span class="arrow">&rarr;</span></button>
-                            </div>
-                        </div>
-                    <?php endwhile;
-                    else:
-                    endif; ?>
-                </div>
-
-                <?php wp_reset_query();     // Restore global post data stomped by the_post().
-                ?>
-            <?php endforeach;
-        endif; ?>
+<!--        --><?php
+//        $categories = get_field('categories_to_display');
+//
+//        if ($categories):
+//            foreach ($categories as $category): ?>
+<!--                <div class="clearfix">-->
+<!--                    <h1>--><?php //echo $category->name ?><!--</h1>-->
+<!--                    --><?php //// query the posts by category and sort by sort index
+//                    $the_query = new WP_Query(array(
+//                        'category_name' => $category->name,
+//                        'post_status' => 'publish, future',
+//                        'meta_key' => 'sort_index',
+//                        'orderby' => 'meta_value_num',
+//                        'order' => 'ASC'
+//                    )); ?>
+<!--                    --><?php ////query_posts('category_name=leaders&post_status=publish,future');
+//                    ?>
+<!--                    --><?php //if ($the_query->have_posts()) : while ($the_query->have_posts()) :
+//                        $the_query->the_post(); ?>
+<!--                        <div class="col-sm-6">-->
+<!--                            --><?php //if (has_post_thumbnail()) : // check if the post has a Post Thumbnail assigned to it.
+//                                ?>
+<!--                                <div class="category-post-image">-->
+<!--                                    --><?php //the_post_thumbnail(); ?>
+<!--                                </div>-->
+<!--                            --><?php //endif; ?>
+<!---->
+<!--                            <div class="category-post">-->
+<!--                                <h2><a href="--><?php //the_permalink(); ?><!--">--><?php
+//                                        if (get_field('title_part')) {
+//                                            the_field('title_part');
+//                                        } else {
+//                                            the_title();
+//                                        }
+//                                        ?><!--</a></h2>-->
+<!---->
+<!--                                --><?php //the_field('summary'); ?>
+<!--                            </div>-->
+<!--                            <div class="read-more">-->
+<!--                                <button class="btn btn-link">Read more <span class="arrow">&rarr;</span></button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    --><?php //endwhile;
+//                    else:
+//                    endif; ?>
+<!--                </div>-->
+<!---->
+<!--                --><?php //wp_reset_query();     // Restore global post data stomped by the_post().
+//                ?>
+<!--            --><?php //endforeach;
+//        endif; ?>
 
         <?php // the home page content ?>
         <?php get_template_part( 'content', get_post_format() ); ?>

@@ -1,12 +1,10 @@
 <?php
 /**
- * The template for displaying Category pages
- *
- * @link http://codex.wordpress.org/Template_Hierarchy
+ * Template Name: Publications
+ * Description: Full-width, without a sidebar, lists publications with category publications and sub category
  *
  * @package WordPress
- * @subpackage UT-TheHill
- * @since Twenty Thirteen 1.0
+ * @subpackage Arc-UT-TheHill-Child
  */
 
 get_header(); ?>
@@ -22,7 +20,13 @@ get_header(); ?>
                 <?php endif; ?>
             </header><!-- .archive-header -->
 
+            <?php /* The loop */ ?>
+            <?php while (have_posts()) : the_post(); ?>
+                <?php get_template_part('content', get_post_format()); ?>
+            <?php endwhile; ?>
+
             <div class="category-filter">
+                <h4>Filter the publications using these categories:</h4>
                 <?php // list all categories
                 $args = array(
                     'type' => 'post',
@@ -82,8 +86,12 @@ get_header(); ?>
                 <div class="category-filter-warning alert alert-warning">Please select a category to show articles</div>
             </div>
             <div class="articles">
-                <?php /* The loop */ ?>
-                <?php while (have_posts()) : the_post(); ?>
+
+                <?php
+                    // get all posts in the publications category and subcategories
+                    $cat_posts_query = new WP_Query( array( 'category_name' => 'publications', 'posts_per_page' => -1 ) );
+                    /* The loop */
+                    while ($cat_posts_query->have_posts()) : $cat_posts_query->the_post(); ?>
                     <?php get_template_part('content', get_post_format()); ?>
                 <?php endwhile; ?>
             </div>

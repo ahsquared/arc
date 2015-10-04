@@ -1,5 +1,4 @@
-/*!
- Theme Name:   ARC
+/*! Theme Name:   ARC
  Theme URI:
  Description:  Child theme based on UT-The Hill theme
  Author:       AH
@@ -1462,9 +1461,28 @@ h1, h2, h3 {
 #primary {
   width: 100%;
   float: none; }
-  #primary #content {
+  #primary #content,
+  #primary #content.wide {
     width: 100%;
     margin: 0; }
+    #primary #content .entry-title,
+    #primary #content.wide .entry-title {
+      padding-left: 15px; }
+    #primary #content .entry-content,
+    #primary #content.wide .entry-content {
+      padding: 15px; }
+      #primary #content .entry-content h1,
+      #primary #content.wide .entry-content h1 {
+        margin-left: 0;
+        margin-bottom: 20px; }
+      #primary #content .entry-content h2,
+      #primary #content.wide .entry-content h2 {
+        clear: both;
+        margin-left: 0;
+        margin-bottom: 20px; }
+      #primary #content .entry-content hr,
+      #primary #content.wide .entry-content hr {
+        clear: both; }
 
 #colophon {
   border: 0 none;
@@ -1564,30 +1582,46 @@ h1, h2, h3 {
   border: 0 none;
   border-radius: 0; }
 
+.arc-blockquote {
+  margin-left: 25px; }
+  .arc-blockquote.pull-right {
+    text-align: center;
+    width: 33%; }
+
 #sidebar .sidebar-subtitle {
   margin: 20px 15px 10px 15px; }
 
 #sidebar .sidebar-subtitle-2 {
   color: #235d8a;
-  padding: 0 0 10px 0;
-  margin: 5px 15px;
+  font-size: 14px;
+  margin: 5px 15px 5px 0;
   line-height: 1.4; }
 
-.category .entry-header {
+.wpcf7-checkbox .wpcf7-list-item {
+  display: block; }
+
+.page-template-publications .entry-header {
   background: #cedbdf;
   padding: 20px 0 20px 20px; }
 
-.category .category-filter {
-  overflow: hidden; }
-  .category .category-filter .checkbox + .checkbox {
+.page-template-publications .category-filter {
+  overflow: hidden;
+  padding-left: 15px; }
+  .page-template-publications .category-filter .checkbox + .checkbox {
     margin-top: 10px; }
-  .category .category-filter .category-filter-warning {
-    display: none; }
+
+.page-template-publications .category-filter-warning {
+  display: none; }
+
+.page-template-publications .content-start {
+  padding-left: 15px; }
 
 .page-template-home .home-banner {
   color: #fff;
   text-align: center;
   position: relative; }
+  .page-template-home .home-banner img {
+    width: 100%; }
   .page-template-home .home-banner .banner-title,
   .page-template-home .home-banner .banner-subtitle {
     font-weight: 300;

@@ -1,15 +1,19 @@
-.category {
+.page-template-publications {
 	.entry-header {
 		background: #cedbdf;
 		padding: 20px 0 20px 20px;
 	}
 	.category-filter {
 		overflow: hidden;
+		padding-left: 15px;
 		.checkbox + .checkbox {
 			margin-top: 10px;
 		}
-		.category-filter-warning {
-			display: none;
-		}
+	}
+	.category-filter-warning {
+		display: none;
+	}
+	.content-start {
+		padding-left: 15px;
 	}
 }

@@ -59,9 +59,28 @@
 #primary {
 	width: 100%;
 	float: none;
-	#content {
+	#content,
+	#content.wide {
 		width: 100%;
 		margin: 0;
+		.entry-title {
+			padding-left: 15px;
+		}
+		.entry-content {
+			padding: 15px;
+			h1 {
+				margin-left: 0;
+				margin-bottom: 20px;
+			}
+			h2 {
+				clear: both;
+				margin-left: 0;
+				margin-bottom: 20px;
+			}
+			hr {
+				clear: both;
+			}
+		}
 	}
 }
 
@@ -177,6 +196,13 @@
 			border: 0 none;
 			border-radius: 0;
 		}
+	}
+}
+.arc-blockquote {
+	margin-left: 25px;
+	&.pull-right {
+		text-align: center;
+		width: 33%;
 	}
 }
 
