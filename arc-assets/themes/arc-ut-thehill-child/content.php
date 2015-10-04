@@ -37,6 +37,7 @@
             <div class="read-more">
                 <button class="btn btn-link">Read more <span class="arrow">&darr;</span></button>
             </div>
+
         <?php else : ?>
             <h1 class="entry-title">
                 <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>

@@ -37,9 +37,7 @@ function arc_block_quote($atts, $content = null) {
 }
 add_shortcode("arc-block-quote", "arc_block_quote");
 
-// add Publications Post Type
-
-// Register Custom Post Type
+// Register Publications Post Type
 function publications_post_type() {
 
     $labels = array(
@@ -76,7 +74,7 @@ function publications_post_type() {
         'has_archive'         => true,
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
-        'capability_type'     => 'page',
+        'capability_type'     => 'post',
     );
     register_post_type( 'publication', $args );
 

@@ -29,7 +29,7 @@ get_header(); ?>
                 <h4>Filter the publications using these categories:</h4>
                 <?php // list all categories
                 $args = array(
-                    'type' => 'post',
+                    'type' => 'publication',
                     'child_of' => 0,
                     'parent' => '6',
                     'orderby' => 'name',
@@ -89,7 +89,7 @@ get_header(); ?>
 
                 <?php
                     // get all posts in the publications category and subcategories
-                    $cat_posts_query = new WP_Query( array( 'category_name' => 'publications', 'posts_per_page' => -1 ) );
+                    $cat_posts_query = new WP_Query( array( 'post_type' => 'publication', 'category_name' => 'publications', 'posts_per_page' => -1 ) );
                     /* The loop */
                     while ($cat_posts_query->have_posts()) : $cat_posts_query->the_post(); ?>
                     <?php get_template_part('content', get_post_format()); ?>
