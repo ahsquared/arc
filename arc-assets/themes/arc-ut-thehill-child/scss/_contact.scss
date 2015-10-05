@@ -1,4 +1,14 @@
-.wpcf7-submit {
-	@include button-variant($white, $utorange, transparent);
-	@include button-size(5px, 35px, 14px, 30px, 4px);
+.wpcf7 {
+	.wpcf7-submit {
+		@include button-variant($white, $utorange, transparent);
+		@include button-size(5px, 35px, 14px, 30px, 4px);
+	}
+
+	.wpcf7-response-output {
+		border: 2px solid $utorange;
+		border-radius: 4px;
+	}
+	input.form-control {
+		color: $utorange;
+	}
 }
