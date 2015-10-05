@@ -165,7 +165,7 @@
                 </nav>
                 <!-- #site-navigation -->
                 <div class="arc-logo">
-                    <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_site_url(); ?>/arc-assets/themes/arc-ut-thehill-child/images/arc-logo.png" alt="ARC"/></a>
+                    <a href="<?php echo get_site_url(); ?>"><img src="<?php the_field('arc_logo', 8); ?>" alt="ARC"/></a>
                 </div>
             </div>
 
