@@ -1,0 +1,4 @@
+.wpcf7-submit {
+	@include button-variant($white, $utorange, transparent);
+	@include button-size(5px, 35px, 14px, 30px, 4px);
+}

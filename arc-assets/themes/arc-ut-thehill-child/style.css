@@ -1600,6 +1600,51 @@ h1, h2, h3 {
 .wpcf7-checkbox .wpcf7-list-item {
   display: block; }
 
+.wpcf7-submit {
+  color: #fff;
+  background-color: #FF8200;
+  border-color: transparent;
+  padding: 5px 35px;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: 4px; }
+  .wpcf7-submit:hover,
+  .wpcf7-submit:focus,
+  .wpcf7-submit.focus,
+  .wpcf7-submit:active,
+  .wpcf7-submit.active,
+  .open > .wpcf7-submit.dropdown-toggle {
+    color: #fff;
+    background-color: #cc6800;
+    border-color: transparent; }
+  .wpcf7-submit:active,
+  .wpcf7-submit.active,
+  .open > .wpcf7-submit.dropdown-toggle {
+    background-image: none; }
+  .wpcf7-submit.disabled,
+  .wpcf7-submit.disabled:hover,
+  .wpcf7-submit.disabled:focus,
+  .wpcf7-submit.disabled.focus,
+  .wpcf7-submit.disabled:active,
+  .wpcf7-submit.disabled.active,
+  .wpcf7-submit[disabled],
+  .wpcf7-submit[disabled]:hover,
+  .wpcf7-submit[disabled]:focus,
+  .wpcf7-submit[disabled].focus,
+  .wpcf7-submit[disabled]:active,
+  .wpcf7-submit[disabled].active,
+  fieldset[disabled] .wpcf7-submit,
+  fieldset[disabled] .wpcf7-submit:hover,
+  fieldset[disabled] .wpcf7-submit:focus,
+  fieldset[disabled] .wpcf7-submit.focus,
+  fieldset[disabled] .wpcf7-submit:active,
+  fieldset[disabled] .wpcf7-submit.active {
+    background-color: #FF8200;
+    border-color: transparent; }
+  .wpcf7-submit .badge {
+    color: #FF8200;
+    background-color: #fff; }
+
 .page-template-publications .entry-header {
   background: #cedbdf;
   padding: 20px 0 20px 20px; }
