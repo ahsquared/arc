@@ -1,12 +1,12 @@
 (function filterCategories() {
-    var categoryFilter = $(".category-filter");
+    var categoryFilter = $(".category-filter"),
+        articles = $(".articles article");
     if (categoryFilter.length === 0) {
         return;
     }
     categoryFilter.on("change", "input", function filterCategories() {
         var categoryChecks = $(".category-filter .category-filter-checkbox:checked"),
-            categories = [],
-            articles = $(".articles article");
+            categories = [];
 
         // make an array of all selected categories
         categoryChecks.each(function () {
@@ -20,24 +20,6 @@
             $(".category-filter-warning").hide();
         }
 
-        if ($(this).prop("checked")) {
-            if ($(this).attr("data-category") === "category-all") {
-                // check all boxes and show all articles
-                articles.show();
-                $(".category-filter .category-filter-checkbox").prop("checked", true);
-                return;
-            } else if ($(this).attr("data-category") === "category-none") {
-                // uncheck all boxes and hide all articles
-                articles.hide();
-                $(".category-filter input").prop("checked", false);
-                $(".category-filter-warning").show();
-                return;
-            }
-        } else {
-            $('[data-category="category-all"]').prop("checked", false);
-        }
-
-        // console.log(categoryChecks, categories);
         articles.hide();
         articles.each(function () {
             var i;
@@ -48,5 +30,16 @@
                 }
             }
         });
+    });
+    categoryFilter.on("click", ".check-all", function checkAllCategories() {
+        // check all boxes and show all articles
+        articles.show();
+        $(".category-filter .category-filter-checkbox").prop("checked", true);
+    });
+    categoryFilter.on("click", ".uncheck-all", function uncheckAllCategories() {
+        // uncheck all boxes and hide all articles
+        articles.hide();
+        $(".category-filter input").prop("checked", false);
+        $(".category-filter-warning").show();
     });
 })();

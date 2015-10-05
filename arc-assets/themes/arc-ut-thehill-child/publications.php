@@ -62,7 +62,7 @@ get_header(); ?>
 
                 foreach ($categories as $category):
                     ?>
-                    <div class="checkbox col-xs-6 col-sm-4">
+                    <div class="checkbox col-xs-6 col-sm-3">
                         <label>
                             <input type="checkbox" class="category-filter-checkbox" checked="checked"
                                    data-category="category-<?php echo $category->category_nicename ?>"> <?php echo $category->name ?>
@@ -70,17 +70,11 @@ get_header(); ?>
                     </div>
                 <?php endforeach; ?>
                 <div class="row"></div>
-                <div class="checkbox col-xs-6 col-sm-4">
-                    <label>
-                        <input type="checkbox" checked="checked"
-                               data-category="category-all"> Check all
-                    </label>
+                <div class="checkbox col-xs-6 col-sm-3">
+                    <button class="btn btn-primary check-all">Check All</button>
                 </div>
-                <div class="checkbox col-xs-6 col-sm-4">
-                    <label>
-                        <input type="checkbox"
-                               data-category="category-none"> Uncheck all
-                    </label>
+                <div class="checkbox col-xs-6 col-sm-3">
+                    <button class="btn btn-secondary uncheck-all">Uncheck All</button>
                 </div>
                 <div class="row"></div>
                 <div class="category-filter-warning alert alert-warning">Please select a category to show articles</div>

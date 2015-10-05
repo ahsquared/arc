@@ -1604,6 +1604,9 @@ h1, h2, h3 {
   background: #cedbdf;
   padding: 20px 0 20px 20px; }
 
+.page-template-publications .entry-content {
+  display: none; }
+
 .page-template-publications .category-filter {
   overflow: hidden;
   padding-left: 15px; }
