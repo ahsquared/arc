@@ -1610,6 +1610,9 @@ h1, h2, h3 {
   .page-template-publications .category-filter .checkbox + .checkbox {
     margin-top: 10px; }
 
+.page-template-publications .category-list {
+  margin: 10px 0 0 15px; }
+
 .page-template-publications .category-filter-warning {
   display: none; }
 

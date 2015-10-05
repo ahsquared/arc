@@ -42,6 +42,23 @@
             <h1 class="entry-title">
                 <a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
             </h1>
+            <?php if (get_post_type() == "publication"): ?>
+                <div class="category-list">
+                    <?php $cats = array();
+                    foreach(wp_get_post_categories(get_the_ID()) as $c) {
+                        $cat = get_category($c);
+                        array_push($cats,$cat->name);
+                    }
+
+                    if(sizeOf($cats) > 0) {
+                        $post_categories = implode(', ',$cats);
+                    } else {
+                        $post_categories = "Not Assigned";
+                    }
+
+                    echo "Categories: " . $post_categories; ?>
+                </div>
+            <?php endif; ?>
         <?php endif; // is_single() ?>
 
 
