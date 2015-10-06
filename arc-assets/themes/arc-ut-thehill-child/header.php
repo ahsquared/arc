@@ -181,7 +181,7 @@
                 </nav>
                 <!-- #site-navigation -->
                 <div class="arc-logo">
-                    <a href="<?php echo get_site_url(); ?>"><img src="<?php the_field('arc_logo', 8); ?>" alt="ARC"/></a>
+                    <a href="<?php echo get_site_url(); ?>"><img src="<?php the_field('arc_institute', 8); ?>" alt="ARC"/></a>
                 </div>
             </div>
 
