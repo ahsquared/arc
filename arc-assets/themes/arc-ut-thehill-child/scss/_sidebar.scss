@@ -1,6 +1,15 @@
 #sidebar {
+	box-shadow: 4px 0px 12px -2px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	nav {
+		padding: 0 30px;
+	}
 	.sidebar-subtitle {
+		color: $home-header-color;
+		border-bottom: 1px solid $header-color;
+		padding: 0 0 10px 0;
 		margin: 20px 15px 10px 15px;
+		line-height: 1.4;
 	}
 	.sidebar-subtitle-2 {
 		color: #235d8a;
@@ -8,4 +17,39 @@
 		margin: 5px 15px 5px 0;
 		line-height: 1.4;
 	}
+	.arc-logo {
+		clear: both;
+		text-align: center;
+		img {
+			max-width: 100%;
+		}
+	}
+	.twitter-typeahead {
+		padding: 0 0 0 50px;
+		margin-bottom: 60px;
+		&:before {
+			background: url("images/find-icon.png") 0 0 no-repeat;
+			content: " ";
+			position: absolute;
+			top: 2px;
+			left: 0;
+			width: 39px;
+			height: 39px;
+			z-index: 51;
+		}
+		.tt-input {
+			border: 0 none;
+			border-bottom: 1px solid $header-color;
+			border-radius: 0;
+			box-shadow: none;
+			color: $header-color;
+			height: 34px;
+			padding: 4px 0;
+			outline: 0 none;
+		}
+	}
+	.ie8 & {
+		border-right: 2px solid #ccc;
+	}
+
 }

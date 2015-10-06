@@ -126,7 +126,14 @@
     <div id="main" class="site-main">
         <div id="sidebar">
             <header id="masthead" class="site-header" role="banner">
-                <h3 class="killer-logo"><a href="http://www.utk.edu">The University of Tennessee, Knoxville</a></h3>
+                <h3 class="killer-logo"><?php
+                        $bg_image_style = '';
+                        if (get_field("ut_logo", 8)) {
+                            $bg_image_style = 'style="background-image: url(' . get_field('ut_logo', 8) . '); background-size: contain; background-position: center;"';
+                        }
+                        echo '<a href="http://www.utk.edu"' . $bg_image_style . '>The University of Tennessee, Knoxville</a>';
+                    ?></h3>
+
                 <h4 class="arc-logo-mobile visible-xs visible-sm">
                     <a href="<?php echo get_site_url(); ?>">
                         <img src="<?php echo get_site_url(); ?>/arc-assets/themes/arc-ut-thehill-child/images/arc-logo.png" alt="ARC"/>
@@ -149,9 +156,18 @@
                     </button>
                     <!-- Collect the nav links, forms, and other content for toggling -->
 
-                    <div class="sidebar-subtitle">Children’s Mental Health<br>
-                        Services Research Center
-                        <h4 class="sidebar-subtitle-2">COLLEGE OF SOCIAL WORK</h4>
+                    <div class="sidebar-subtitle"><?php
+                        if (get_field("sidebar_subtitle", 8)) {
+                            the_field('sidebar_subtitle', 8);
+                        } else {
+                            echo "Children’s Mental Health<br>Services Research Center";
+                        }?>
+                        <h4 class="sidebar-subtitle-2"><?php
+                            if (get_field("sidebar_subtitle_2", 8)) {
+                                the_field('sidebar_subtitle_2', 8);
+                            } else {
+                                echo "COLLEGE OF SOCIAL WORK";
+                            }?></h4>
                     </div>
 
                     <?php get_template_part('library/partials/off-canvas', 'page'); ?>
