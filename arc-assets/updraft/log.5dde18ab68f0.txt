@@ -1,0 +1,253 @@
+0000.001 (0) Opened log file at time: Mon, 12 Oct 2015 19:53:45 +0000 on http://arc.dev
+0000.004 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.11.12 WP: 4.3.1 PHP: 5.3.29 (Darwin ahayter-mac.local 14.5.0 Darwin Kernel Version 14.5.0: Wed Jul 29 02:26:53 PDT 2015; root:xnu-2782.40.9~1/RELEASE_X86_64 x86_64) MySQL: 5.5.42 Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 59.5M | 60M) multisite: N mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.006 (0) Free space on disk containing Updraft's temporary directory: 25477.6 Mb
+0000.010 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.012 (0) Processed schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.016 (0) Requesting semaphore lock (fd)
+0000.020 (0) Set semaphore last lock (fd) time to 2015-10-12 19:53:45
+0000.022 (0) Semaphore lock (fd) complete
+0000.028 (0) Backup run: resumption=0, nonce=5dde18ab68f0, begun at=1444679625 (0s ago), job type=backup
+0000.031 (0) Scheduling a resumption (1) after 300 seconds (1444679925) in case this run gets aborted
+0000.048 (0) Checking if we have a zip executable available
+0000.050 (0) Testing: /usr/bin/zip
+0000.061 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.063 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.065 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.066 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=128) (out=105) (deflated 18%)
+0000.068 (0) Output: total bytes=128, compressed=105 -> 18% savings
+0000.078 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=135) (out=111) (deflated 18%)
+0000.081 (0) Output: total bytes=263, compressed=216 -> 18% savings
+0000.084 (0) Working binary zip found: /usr/bin/zip
+0000.087 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.089 (0) Creation of backups of directories: beginning
+0000.096 (0) Beginning creation of dump of plugins (split every: 500 Mb)
+0000.334 (0) Total entities for the zip file: 356 directories, 2085 files (0 skipped as non-modified), 28.1 Mb
+0000.344 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0000.354 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0000.362 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0000.371 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0000.380 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 500 files added (on-disk size: 0 Kb)
+0000.382 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.1 Mb, 2085 files batched, 501 (501) added so far); re-opening (prior size: 0 Kb)
+0000.728 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: size is now: 2.00 Mb
+0000.739 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 600 files added (on-disk size: 2046.8 Kb)
+0000.748 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 700 files added (on-disk size: 2046.8 Kb)
+0000.757 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 800 files added (on-disk size: 2046.8 Kb)
+0000.765 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 900 files added (on-disk size: 2046.8 Kb)
+0000.774 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 1000 files added (on-disk size: 2046.8 Kb)
+0000.776 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (6.6 Mb, 2085 files batched, 501 (1002) added so far); re-opening (prior size: 2046.8 Kb)
+0001.185 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: size is now: 4.20 Mb
+0001.198 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 1100 files added (on-disk size: 4275.2 Kb)
+0001.208 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 1200 files added (on-disk size: 4275.2 Kb)
+0001.217 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 1300 files added (on-disk size: 4275.2 Kb)
+0001.225 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 1400 files added (on-disk size: 4275.2 Kb)
+0001.234 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 1500 files added (on-disk size: 4275.2 Kb)
+0001.237 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (12.1 Mb, 2085 files batched, 501 (1503) added so far); re-opening (prior size: 4275.2 Kb)
+0002.097 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: size is now: 7.90 Mb
+0002.110 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 1600 files added (on-disk size: 8058.5 Kb)
+0002.119 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 1700 files added (on-disk size: 8058.5 Kb)
+0002.128 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 1800 files added (on-disk size: 8058.5 Kb)
+0002.138 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 1900 files added (on-disk size: 8058.5 Kb)
+0002.152 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip.tmp: 2000 files added (on-disk size: 8058.5 Kb)
+0002.154 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.8 Mb, 2085 files batched, 501 (2004) added so far); re-opening (prior size: 8058.5 Kb)
+0002.701 (0) Created plugins zip (0) - 9861.5 Kb in 2.6 s (3791.2 Kb/s) (SHA1 checksum: 6cd03401f5272277b5aa6083831305f096686207)
+0002.707 (0) Beginning creation of dump of themes (split every: 500 Mb)
+0002.734 (0) Total entities for the zip file: 47 directories, 417 files (0 skipped as non-modified), 4.3 Mb
+0002.744 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-themes.zip.tmp: 100 files added (on-disk size: 0 Kb)
+0002.752 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-themes.zip.tmp: 200 files added (on-disk size: 0 Kb)
+0002.761 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-themes.zip.tmp: 300 files added (on-disk size: 0 Kb)
+0002.769 (0) Zip: backup_2015-10-12-1553_ARC_5dde18ab68f0-themes.zip.tmp: 400 files added (on-disk size: 0 Kb)
+0002.952 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-themes.zip.tmp: size is now: 1.50 Mb
+0002.973 (0) Created themes zip (0) - 1581.8 Kb in 0.3 s (6028.8 Kb/s) (SHA1 checksum: 64bdb2e71409ad4a3f1e048f73a60b0f33bbe25a)
+0002.980 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone
+0002.982 (0) Looking for candidates to back up in: /Users/ahayter/Sites/arc/arc-assets/uploads
+0002.984 (0) finding files: .DS_Store: adding to list (1)
+0002.986 (0) finding files: 2015: adding to list (2)
+0002.989 (0) finding files: ithemes-security: adding to list (3)
+0002.991 (0) finding files: wp-migrate-db: adding to list (4)
+0002.993 (0) Beginning creation of dump of uploads (split every: 500 Mb)
+0003.012 (0) Total entities for the zip file: 10 directories, 90 files (0 skipped as non-modified), 14.6 Mb
+0003.189 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-uploads.zip.tmp: size is now: 14.60 Mb
+0003.312 (0) Created uploads zip (0) - 14982 Kb in 0.3 s (48051.1 Kb/s) (SHA1 checksum: 18495a059b084c5f26656e10fefd6663b86edd39)
+0003.318 (0) Beginning backup of other directories found in the content directory (index: 0)
+0003.320 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql
+0003.322 (0) Looking for candidates to back up in: /Users/ahayter/Sites/arc/arc-assets
+0003.324 (0) finding files: .DS_Store: adding to list (1)
+0003.326 (0) finding files: backupwordpress-05a3085dbb-backups: skipping: excluded by options (glob)
+0003.328 (0) finding files: backupwordpress-05a3085dbb-backups: skipping: excluded by options (glob)
+0003.329 (0) finding files: index.php: adding to list (2)
+0003.330 (0) finding files: plugins: skipping: this is the plugins directory
+0003.332 (0) finding files: themes: skipping: this is the themes directory
+0003.334 (0) finding files: updraft: skipping: this is the updraft directory
+0003.335 (0) finding files: upgrade: skipping: excluded by options
+0003.337 (0) finding files: uploads: skipping: this is the uploads directory
+0003.339 (0) finding files: wfcache: adding to list (3)
+0003.346 (0) Total entities for the zip file: 1 directories, 3 files (0 skipped as non-modified), 0 Mb
+0003.357 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-others.zip.tmp: size is now: 0.00 Mb
+0003.364 (0) Created others zip (0) - 1 Kb in 0 s (48.4 Kb/s) (SHA1 checksum: 735b168ce3607c4317ed21491027112860ad34ad)
+0003.373 (0) Saving backup status to database (elements: 8)
+0003.377 (0) Beginning creation of database dump (WordPress DB)
+0003.393 (0) Table arc1542_options: Total expected rows (approximate): 245
+0003.477 (0) Table arc1542_options: Total rows added: 254 in 0.08 seconds
+0003.480 (0) Table arc1542_options: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_options.table.gz - 176.8 Kb)
+0003.487 (0) Table arc1542_users: Total expected rows (approximate): 1
+0003.492 (0) Table arc1542_users: Total rows added: 1 in 0.00 seconds
+0003.498 (0) Table arc1542_users: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_users.table.gz - 0.6 Kb)
+0003.506 (0) Table arc1542_usermeta: Total expected rows (approximate): 29
+0003.513 (0) Table arc1542_usermeta: Total rows added: 29 in 0.00 seconds
+0003.515 (0) Table arc1542_usermeta: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_usermeta.table.gz - 1.3 Kb)
+0003.522 (0) Table arc1542_commentmeta: Total expected rows (approximate): 0
+0003.525 (0) Table arc1542_commentmeta: Total rows added: 0 in 0.00 seconds
+0003.527 (0) Table arc1542_commentmeta: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_commentmeta.table.gz - 0.4 Kb)
+0003.533 (0) Table arc1542_comments: Total expected rows (approximate): 0
+0003.537 (0) Table arc1542_comments: Total rows added: 0 in 0.00 seconds
+0003.540 (0) Table arc1542_comments: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_comments.table.gz - 0.5 Kb)
+0003.546 (0) Table arc1542_links: Total expected rows (approximate): 0
+0003.550 (0) Table arc1542_links: Total rows added: 0 in 0.00 seconds
+0003.554 (0) Table arc1542_links: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_links.table.gz - 0.4 Kb)
+0003.561 (0) Table arc1542_postmeta: Total expected rows (approximate): 926
+0003.636 (0) Table arc1542_postmeta: Total rows added: 1045 in 0.07 seconds
+0003.639 (0) Table arc1542_postmeta: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_postmeta.table.gz - 15.9 Kb)
+0003.646 (0) Table arc1542_posts: Total expected rows (approximate): 224
+0003.721 (0) Table arc1542_posts: Total rows added: 170 in 0.07 seconds
+0003.724 (0) Table arc1542_posts: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_posts.table.gz - 46.7 Kb)
+0003.730 (0) Table arc1542_term_relationships: Total expected rows (approximate): 235
+0003.743 (0) Table arc1542_term_relationships: Total rows added: 235 in 0.01 seconds
+0003.745 (0) Table arc1542_term_relationships: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_term_relationships.table.gz - 1 Kb)
+0003.752 (0) Table arc1542_term_taxonomy: Total expected rows (approximate): 23
+0003.757 (0) Table arc1542_term_taxonomy: Total rows added: 23 in 0.00 seconds
+0003.759 (0) Table arc1542_term_taxonomy: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_term_taxonomy.table.gz - 0.6 Kb)
+0003.765 (0) Table arc1542_terms: Total expected rows (approximate): 23
+0003.770 (0) Table arc1542_terms: Total rows added: 23 in 0.00 seconds
+0003.773 (0) Table arc1542_terms: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_terms.table.gz - 0.7 Kb)
+0003.779 (0) Table arc1542_itsec_lockouts: Total expected rows (approximate): 0
+0003.782 (0) Table arc1542_itsec_lockouts: Total rows added: 0 in 0.00 seconds
+0003.784 (0) Table arc1542_itsec_lockouts: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_itsec_lockouts.table.gz - 0.4 Kb)
+0003.790 (0) Table arc1542_itsec_log: Total expected rows (approximate): 48
+0003.993 (0) Table arc1542_itsec_log: Total rows added: 39 in 0.20 seconds
+0003.995 (0) Table arc1542_itsec_log: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_itsec_log.table.gz - 635.7 Kb)
+0004.003 (0) Table arc1542_itsec_temp: Total expected rows (approximate): 0
+0004.007 (0) Table arc1542_itsec_temp: Total rows added: 0 in 0.00 seconds
+0004.009 (0) Table arc1542_itsec_temp: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_itsec_temp.table.gz - 0.4 Kb)
+0004.016 (0) Table arc1542_wfBadLeechers: Total expected rows (approximate): 0
+0004.020 (0) Table arc1542_wfBadLeechers: Total rows added: 0 in 0.00 seconds
+0004.022 (0) Table arc1542_wfBadLeechers: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfBadLeechers.table.gz - 0.3 Kb)
+0004.029 (0) Table arc1542_wfBlockedIPLog: Total expected rows (approximate): 0
+0004.032 (0) Table arc1542_wfBlockedIPLog: Total rows added: 0 in 0.00 seconds
+0004.034 (0) Table arc1542_wfBlockedIPLog: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfBlockedIPLog.table.gz - 0.3 Kb)
+0004.041 (0) Table arc1542_wfBlocks: Total expected rows (approximate): 0
+0004.044 (0) Table arc1542_wfBlocks: Total rows added: 0 in 0.00 seconds
+0004.046 (0) Table arc1542_wfBlocks: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfBlocks.table.gz - 0.4 Kb)
+0004.053 (0) Table arc1542_wfBlocksAdv: Total expected rows (approximate): 0
+0004.057 (0) Table arc1542_wfBlocksAdv: Total rows added: 0 in 0.00 seconds
+0004.059 (0) Table arc1542_wfBlocksAdv: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfBlocksAdv.table.gz - 0.3 Kb)
+0004.065 (0) Table arc1542_wfConfig: Total expected rows (approximate): 62
+0004.077 (0) Table arc1542_wfConfig: Total rows added: 124 in 0.01 seconds
+0004.079 (0) Table arc1542_wfConfig: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfConfig.table.gz - 7.3 Kb)
+0004.086 (0) Table arc1542_wfCrawlers: Total expected rows (approximate): 0
+0004.089 (0) Table arc1542_wfCrawlers: Total rows added: 0 in 0.00 seconds
+0004.091 (0) Table arc1542_wfCrawlers: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfCrawlers.table.gz - 0.3 Kb)
+0004.097 (0) Table arc1542_wfFileMods: Total expected rows (approximate): 1061
+0004.203 (0) Table arc1542_wfFileMods: Total rows added: 1028 in 0.10 seconds
+0004.206 (0) Table arc1542_wfFileMods: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfFileMods.table.gz - 46.3 Kb)
+0004.213 (0) Table arc1542_wfHits: Total expected rows (approximate): 0
+0004.217 (0) Table arc1542_wfHits: Total rows added: 0 in 0.00 seconds
+0004.219 (0) Table arc1542_wfHits: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfHits.table.gz - 0.4 Kb)
+0004.226 (0) Table arc1542_wfHoover: Total expected rows (approximate): 2
+0004.230 (0) Table arc1542_wfHoover: Total rows added: 2 in 0.00 seconds
+0004.233 (0) Table arc1542_wfHoover: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfHoover.table.gz - 0.4 Kb)
+0004.239 (0) Table arc1542_wfIssues: Total expected rows (approximate): 0
+0004.244 (0) Table arc1542_wfIssues: Total rows added: 0 in 0.00 seconds
+0004.246 (0) Table arc1542_wfIssues: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfIssues.table.gz - 0.4 Kb)
+0004.253 (0) Table arc1542_wfLeechers: Total expected rows (approximate): 0
+0004.258 (0) Table arc1542_wfLeechers: Total rows added: 0 in 0.00 seconds
+0004.260 (0) Table arc1542_wfLeechers: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfLeechers.table.gz - 0.3 Kb)
+0004.267 (0) Table arc1542_wfLockedOut: Total expected rows (approximate): 0
+0004.271 (0) Table arc1542_wfLockedOut: Total rows added: 0 in 0.00 seconds
+0004.273 (0) Table arc1542_wfLockedOut: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfLockedOut.table.gz - 0.3 Kb)
+0004.280 (0) Table arc1542_wfLocs: Total expected rows (approximate): 0
+0004.284 (0) Table arc1542_wfLocs: Total rows added: 0 in 0.00 seconds
+0004.286 (0) Table arc1542_wfLocs: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfLocs.table.gz - 0.4 Kb)
+0004.293 (0) Table arc1542_wfLogins: Total expected rows (approximate): 17
+0004.299 (0) Table arc1542_wfLogins: Total rows added: 17 in 0.00 seconds
+0004.301 (0) Table arc1542_wfLogins: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfLogins.table.gz - 0.9 Kb)
+0004.308 (0) Table arc1542_wfNet404s: Total expected rows (approximate): 0
+0004.311 (0) Table arc1542_wfNet404s: Total rows added: 0 in 0.00 seconds
+0004.314 (0) Table arc1542_wfNet404s: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfNet404s.table.gz - 0.3 Kb)
+0004.320 (0) Table arc1542_wfReverseCache: Total expected rows (approximate): 0
+0004.324 (0) Table arc1542_wfReverseCache: Total rows added: 0 in 0.00 seconds
+0004.326 (0) Table arc1542_wfReverseCache: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfReverseCache.table.gz - 0.3 Kb)
+0004.332 (0) Table arc1542_wfScanners: Total expected rows (approximate): 0
+0004.336 (0) Table arc1542_wfScanners: Total rows added: 0 in 0.00 seconds
+0004.338 (0) Table arc1542_wfScanners: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfScanners.table.gz - 0.3 Kb)
+0004.345 (0) Table arc1542_wfStatus: Total expected rows (approximate): 1112
+0004.429 (0) Table arc1542_wfStatus: Total rows added: 983 in 0.08 seconds
+0004.432 (0) Table arc1542_wfStatus: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfStatus.table.gz - 13.8 Kb)
+0004.439 (0) Table arc1542_wfThrottleLog: Total expected rows (approximate): 0
+0004.442 (0) Table arc1542_wfThrottleLog: Total rows added: 0 in 0.00 seconds
+0004.444 (0) Table arc1542_wfThrottleLog: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfThrottleLog.table.gz - 0.3 Kb)
+0004.451 (0) Table arc1542_wfVulnScanners: Total expected rows (approximate): 0
+0004.455 (0) Table arc1542_wfVulnScanners: Total rows added: 0 in 0.00 seconds
+0004.457 (0) Table arc1542_wfVulnScanners: finishing file (backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfVulnScanners.table.gz - 0.3 Kb)
+0004.464 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_options.table.gz (1/34): adding to final database dump
+0004.539 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_users.table.gz (2/34): adding to final database dump
+0004.542 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_usermeta.table.gz (3/34): adding to final database dump
+0004.544 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_commentmeta.table.gz (4/34): adding to final database dump
+0004.546 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_comments.table.gz (5/34): adding to final database dump
+0004.548 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_links.table.gz (6/34): adding to final database dump
+0004.551 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_postmeta.table.gz (7/34): adding to final database dump
+0004.571 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_posts.table.gz (8/34): adding to final database dump
+0004.597 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_term_relationships.table.gz (9/34): adding to final database dump
+0004.602 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_term_taxonomy.table.gz (10/34): adding to final database dump
+0004.605 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_terms.table.gz (11/34): adding to final database dump
+0004.607 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_itsec_lockouts.table.gz (12/34): adding to final database dump
+0004.609 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_itsec_log.table.gz (13/34): adding to final database dump
+0004.824 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_itsec_temp.table.gz (14/34): adding to final database dump
+0004.827 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfBadLeechers.table.gz (15/34): adding to final database dump
+0004.829 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfBlockedIPLog.table.gz (16/34): adding to final database dump
+0004.831 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfBlocks.table.gz (17/34): adding to final database dump
+0004.833 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfBlocksAdv.table.gz (18/34): adding to final database dump
+0004.835 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfConfig.table.gz (19/34): adding to final database dump
+0004.841 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfCrawlers.table.gz (20/34): adding to final database dump
+0004.844 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfFileMods.table.gz (21/34): adding to final database dump
+0004.867 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfHits.table.gz (22/34): adding to final database dump
+0004.870 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfHoover.table.gz (23/34): adding to final database dump
+0004.872 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfIssues.table.gz (24/34): adding to final database dump
+0004.874 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfLeechers.table.gz (25/34): adding to final database dump
+0004.876 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfLockedOut.table.gz (26/34): adding to final database dump
+0004.878 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfLocs.table.gz (27/34): adding to final database dump
+0004.881 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfLogins.table.gz (28/34): adding to final database dump
+0004.884 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfNet404s.table.gz (29/34): adding to final database dump
+0004.886 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfReverseCache.table.gz (30/34): adding to final database dump
+0004.888 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfScanners.table.gz (31/34): adding to final database dump
+0004.890 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfStatus.table.gz (32/34): adding to final database dump
+0004.910 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfThrottleLog.table.gz (33/34): adding to final database dump
+0004.912 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db-table-arc1542_wfVulnScanners.table.gz (34/34): adding to final database dump
+0004.914 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db.gz: finished writing out complete database file (936 Kb)
+0004.933 (0) Total database tables backed up: 34 (backup_2015-10-12-1553_ARC_5dde18ab68f0-db.gz, size: 972003, checksum (SHA1): 38b92733f97ecb7ae4f2618e9dd8dead6c862a23)
+0004.937 (0) Saving backup history
+0004.944 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0004.946 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0004.948 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0004.950 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-others.zip: others: This file has not yet been successfully uploaded: will queue
+0004.951 (0) backup_2015-10-12-1553_ARC_5dde18ab68f0-db.gz: db: This file has not yet been successfully uploaded: will queue
+0004.956 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0004.961 (0) Cloud backup selection (1/1): none (last)
+0004.963 (0) No remote despatch: user chose no remote backup service
+0004.966 (0) Recording as successfully uploaded: backup_2015-10-12-1553_ARC_5dde18ab68f0-plugins.zip (4dd794e615d3b20470fadce9c05a11f6)
+0004.975 (0) Recording as successfully uploaded: backup_2015-10-12-1553_ARC_5dde18ab68f0-themes.zip (5ae437669818e24d2ad49bdbb0a5e038)
+0004.982 (0) Recording as successfully uploaded: backup_2015-10-12-1553_ARC_5dde18ab68f0-uploads.zip (34f21fdfbb582319eade82ac3637b24f)
+0004.989 (0) Recording as successfully uploaded: backup_2015-10-12-1553_ARC_5dde18ab68f0-others.zip (ef0d342a1a14e7c399abe4110980dbc1)
+0004.997 (0) Recording as successfully uploaded: backup_2015-10-12-1553_ARC_5dde18ab68f0-db.gz (3d7f29d0fdd15b167192ed3a48cce961)
+0005.004 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0005.006 (0) Number of backup sets in history: 2
+0005.009 (0) Examining backup set with datestamp: 1444679625 (Oct 12 2015 19:53:45)
+0005.010 (0) 1444679625: this backup set remains non-empty (1/1); will retain in history
+0005.012 (0) Examining backup set with datestamp: 1444528188 (Oct 11 2015 01:49:48)
+0005.014 (0) 1444528188: this backup set remains non-empty (1/1); will retain in history
+0005.015 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0005.021 (0) Resume backup (5dde18ab68f0, 0): finish run
+0005.024 (0) Decremented the semaphore (fd) by 1
+0005.026 (0) Semaphore (fd) unlocked
+0005.028 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0005.035 (0) No email will/can be sent - the user has not configured an email address.
+0005.037 (0) The backup apparently succeeded and is now complete
