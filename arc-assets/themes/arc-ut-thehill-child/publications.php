@@ -51,24 +51,30 @@ get_header(); ?>
                 //        $category->cat_name
                 //        $category->category_nicename
                 //        $category->category_parent
-
+                $i = 0;
                 foreach ($categories as $category):
+                    if ($i % 4 == 0):
                     ?>
+                    <div class="row category-row">
+                    <?php endif; ?>
                     <div class="checkbox col-xs-6 col-sm-3">
                         <label>
                             <input type="checkbox" class="category-filter-checkbox" checked="checked"
                                    data-category="category-<?php echo $category->category_nicename ?>"> <?php echo $category->name ?>
                         </label>
                     </div>
-                <?php endforeach; ?>
-                <div class="row"></div>
-                <div class="checkbox col-xs-6 col-sm-3">
-                    <button class="btn btn-primary check-all">Check All</button>
+                    <?php if ($i % 4 == 3 || $i == count($categories) - 1): ?>
+                        </div>
+                    <?php endif; ?>
+        <?php $i++; endforeach; ?>
+                <div class="row category-row">
+                    <div class="checkbox col-xs-6 col-sm-3">
+                        <button class="btn btn-primary check-all">Check All</button>
+                    </div>
+                    <div class="checkbox col-xs-6 col-sm-3">
+                        <button class="btn btn-secondary uncheck-all">Uncheck All</button>
+                    </div>
                 </div>
-                <div class="checkbox col-xs-6 col-sm-3">
-                    <button class="btn btn-secondary uncheck-all">Uncheck All</button>
-                </div>
-                <div class="row"></div>
                 <div class="category-filter-warning alert alert-warning">Please select a category to show articles</div>
             </div>
             <div class="articles">
@@ -88,7 +94,5 @@ get_header(); ?>
             <?php get_template_part('content', 'none'); ?>
         <?php endif; ?>
 
-
-    </div>
 <?php //get_sidebar(); ?>
 <?php get_footer(); ?>

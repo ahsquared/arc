@@ -2,15 +2,36 @@
 	.entry-header {
 		background: #cedbdf;
 		padding: 20px 0 20px 20px;
+		h1 {
+			font-size: 16px;
+			font-weight: normal;
+			a {
+				color: $subheader-color !important;
+				cursor: default;
+			}
+		}
+	}
+	.publication {
+		margin-bottom: 2px;
 	}
 	.entry-content {
 		display: none;
 	}
 	.category-filter {
 		overflow: hidden;
-		padding-left: 15px;
+		padding-left: 0;
+		margin-bottom: 25px;
+		h4 {
+			padding-left: 30px;
+		}
 		.checkbox + .checkbox {
 			margin-top: 10px;
+		}
+	}
+	.category-row {
+		padding-left: 30px;
+		.checkbox {
+			margin-bottom: 0;
 		}
 	}
 	.category-list {

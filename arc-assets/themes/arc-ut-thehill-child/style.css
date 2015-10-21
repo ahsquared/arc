@@ -1423,6 +1423,8 @@ h1, h2, h3 {
 #primary {
   width: 100%;
   float: none; }
+  #primary .entry-thumbnail img {
+    width: 100%; }
   #primary #content,
   #primary #content.wide {
     width: 100%;
@@ -1653,15 +1655,32 @@ h1, h2, h3 {
 .page-template-publications .entry-header {
   background: #cedbdf;
   padding: 20px 0 20px 20px; }
+  .page-template-publications .entry-header h1 {
+    font-size: 16px;
+    font-weight: normal; }
+    .page-template-publications .entry-header h1 a {
+      color: #667a8a !important;
+      cursor: default; }
+
+.page-template-publications .publication {
+  margin-bottom: 2px; }
 
 .page-template-publications .entry-content {
   display: none; }
 
 .page-template-publications .category-filter {
   overflow: hidden;
-  padding-left: 15px; }
+  padding-left: 0;
+  margin-bottom: 25px; }
+  .page-template-publications .category-filter h4 {
+    padding-left: 30px; }
   .page-template-publications .category-filter .checkbox + .checkbox {
     margin-top: 10px; }
+
+.page-template-publications .category-row {
+  padding-left: 30px; }
+  .page-template-publications .category-row .checkbox {
+    margin-bottom: 0; }
 
 .page-template-publications .category-list {
   margin: 10px 0 0 15px; }
@@ -1671,6 +1690,32 @@ h1, h2, h3 {
 
 .page-template-publications .content-start {
   padding-left: 15px; }
+
+#personnel {
+  padding: 0 25px; }
+  #personnel .person {
+    border-bottom: 1px solid #dedfe1;
+    min-height: 750px; }
+  #personnel img {
+    margin-bottom: 0;
+    max-width: 100%; }
+  #personnel .details {
+    margin: 0 15px; }
+    #personnel .details .name {
+      color: #2c3e50;
+      font-size: 18px;
+      font-weight: bold; }
+    #personnel .details .title,
+    #personnel .details .contact {
+      color: #a1b1bc; }
+    #personnel .details .contact {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #dedfe1;
+      margin-bottom: 20px; }
+  #personnel p {
+    margin: 0 15px 15px 15px; }
+  #personnel .summary {
+    line-height: 1.5; }
 
 .page-template-home .home-banner {
   color: #fff;

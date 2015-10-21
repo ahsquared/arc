@@ -17,6 +17,11 @@
 #primary {
 	width: 100%;
 	float: none;
+	.entry-thumbnail {
+		img {
+			width: 100%;
+		}
+	}
 	#content,
 	#content.wide {
 		width: 100%;

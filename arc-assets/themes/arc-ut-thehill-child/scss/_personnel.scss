@@ -1,0 +1,36 @@
+#personnel {
+	padding: 0 25px;
+	.person {
+		border-bottom: 1px solid #dedfe1;
+		min-height: 750px;
+	}
+	img {
+		margin-bottom: 0;
+		max-width: 100%;
+	}
+	.details {
+		margin: 0 15px;
+
+		.name {
+			color: $personnel;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.title,
+		.contact {
+			color: #a1b1bc;
+		}
+		.contact {
+			padding-bottom: 20px;
+			border-bottom: 1px solid #dedfe1;
+			margin-bottom: 20px;
+		}
+
+	}
+	p {
+		margin: 0 15px 15px 15px;
+	}
+	.summary {
+		line-height: 1.5;
+	}
+}
