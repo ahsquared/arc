@@ -166,7 +166,7 @@
                             if (get_field("sidebar_subtitle_2", 8)) {
                                 the_field('sidebar_subtitle_2', 8);
                             } else {
-                                echo "COLLEGE OF SOCIAL WORK";
+                                echo '<a href="http://www.csw.utk.edu/">COLLEGE OF SOCIAL WORK</a>';
                             }?></h4>
                     </div>
 
