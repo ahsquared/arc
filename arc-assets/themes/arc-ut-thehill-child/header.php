@@ -126,7 +126,7 @@
     <div id="main" class="site-main">
         <div id="sidebar">
             <header id="masthead" class="site-header" role="banner">
-                <h3 class="killer-logo"><?php
+                <h3 class="killer-logo hidden-xs hidden-sm"><?php
                         $bg_image_style = '';
                         if (get_field("ut_logo", 8)) {
                             $bg_image_style = 'style="background-image: url(' . get_field('ut_logo', 8) . '); background-size: contain; background-position: center;"';
@@ -136,7 +136,7 @@
 
                 <h4 class="arc-logo-mobile visible-xs visible-sm">
                     <a href="<?php echo get_site_url(); ?>">
-                        <img src="<?php echo get_site_url(); ?>/arc-assets/themes/arc-ut-thehill-child/images/arc-logo.png" alt="ARC"/>
+                        <img src="<?php echo get_field('ut_logo', 8); ?>" alt="ARC"/>
                     </a>
                 </h4>
                 <button type="button" class="toggle close findpage">
@@ -174,7 +174,7 @@
 
                     <form role="search">
                         <div class="form-group">
-                            <input tabindex="1" type="text" class="supersearch form-control" placeholder="Find a Page"
+                            <input tabindex="1" type="text" class="supersearch form-control" placeholder="Search"
                                    role="search" aria-label="Site Search">
                         </div>
                     </form>

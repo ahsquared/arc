@@ -10,7 +10,7 @@
 get_header(); ?>
 
 
-  
+
 		<div id="content" class="site-content" role="main">
 
 			<?php /* The loop */ ?>

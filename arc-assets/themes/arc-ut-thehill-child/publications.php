@@ -59,7 +59,7 @@ get_header(); ?>
                     <?php endif; ?>
                     <div class="checkbox col-xs-6 col-sm-3">
                         <label>
-                            <input type="checkbox" class="category-filter-checkbox" checked="checked"
+                            <input type="checkbox" class="category-filter-checkbox"
                                    data-category="category-<?php echo $category->category_nicename ?>"> <?php echo $category->name ?>
                         </label>
                     </div>

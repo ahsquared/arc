@@ -806,8 +806,7 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before,
-  .container:after {
+  .container:before, .container:after {
     content: " ";
     display: table; }
   .container:after {
@@ -827,8 +826,7 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container-fluid:before,
-  .container-fluid:after {
+  .container-fluid:before, .container-fluid:after {
     content: " ";
     display: table; }
   .container-fluid:after {
@@ -837,8 +835,7 @@
 .row {
   margin-left: -15px;
   margin-right: -15px; }
-  .row:before,
-  .row:after {
+  .row:before, .row:after {
     content: " ";
     display: table; }
   .row:after {
@@ -1340,9 +1337,11 @@
   .alert > p + p {
     margin-top: 5px; }
 
-.alert-dismissable, .alert-dismissible {
+.alert-dismissable,
+.alert-dismissible {
   padding-right: 35px; }
-  .alert-dismissable .close, .alert-dismissible .close {
+  .alert-dismissable .close,
+  .alert-dismissible .close {
     position: relative;
     top: -2px;
     right: -21px;
@@ -1425,6 +1424,10 @@ h1, h2, h3 {
   float: none; }
   #primary .entry-thumbnail img {
     width: 100%; }
+  #primary .post-thumbnail img, #primary .wp-post-image, #primary img.size-large {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; }
   #primary #content,
   #primary #content.wide {
     width: 100%;
@@ -1608,31 +1611,15 @@ h1, h2, h3 {
   font-size: 14px;
   line-height: 30px;
   border-radius: 4px; }
-  .wpcf7 .wpcf7-submit:hover,
-  .wpcf7 .wpcf7-submit:focus,
-  .wpcf7 .wpcf7-submit.focus,
-  .wpcf7 .wpcf7-submit:active,
-  .wpcf7 .wpcf7-submit.active,
+  .wpcf7 .wpcf7-submit:hover, .wpcf7 .wpcf7-submit:focus, .wpcf7 .wpcf7-submit.focus, .wpcf7 .wpcf7-submit:active, .wpcf7 .wpcf7-submit.active,
   .open > .wpcf7 .wpcf7-submit.dropdown-toggle {
     color: #fff;
     background-color: #cc6800;
     border-color: transparent; }
-  .wpcf7 .wpcf7-submit:active,
-  .wpcf7 .wpcf7-submit.active,
+  .wpcf7 .wpcf7-submit:active, .wpcf7 .wpcf7-submit.active,
   .open > .wpcf7 .wpcf7-submit.dropdown-toggle {
     background-image: none; }
-  .wpcf7 .wpcf7-submit.disabled,
-  .wpcf7 .wpcf7-submit.disabled:hover,
-  .wpcf7 .wpcf7-submit.disabled:focus,
-  .wpcf7 .wpcf7-submit.disabled.focus,
-  .wpcf7 .wpcf7-submit.disabled:active,
-  .wpcf7 .wpcf7-submit.disabled.active,
-  .wpcf7 .wpcf7-submit[disabled],
-  .wpcf7 .wpcf7-submit[disabled]:hover,
-  .wpcf7 .wpcf7-submit[disabled]:focus,
-  .wpcf7 .wpcf7-submit[disabled].focus,
-  .wpcf7 .wpcf7-submit[disabled]:active,
-  .wpcf7 .wpcf7-submit[disabled].active,
+  .wpcf7 .wpcf7-submit.disabled, .wpcf7 .wpcf7-submit.disabled:hover, .wpcf7 .wpcf7-submit.disabled:focus, .wpcf7 .wpcf7-submit.disabled.focus, .wpcf7 .wpcf7-submit.disabled:active, .wpcf7 .wpcf7-submit.disabled.active, .wpcf7 .wpcf7-submit[disabled], .wpcf7 .wpcf7-submit[disabled]:hover, .wpcf7 .wpcf7-submit[disabled]:focus, .wpcf7 .wpcf7-submit[disabled].focus, .wpcf7 .wpcf7-submit[disabled]:active, .wpcf7 .wpcf7-submit[disabled].active,
   fieldset[disabled] .wpcf7 .wpcf7-submit,
   fieldset[disabled] .wpcf7 .wpcf7-submit:hover,
   fieldset[disabled] .wpcf7 .wpcf7-submit:focus,
@@ -1663,6 +1650,7 @@ h1, h2, h3 {
       cursor: default; }
 
 .page-template-publications .publication {
+  display: none;
   margin-bottom: 2px; }
 
 .page-template-publications .entry-content {
@@ -1760,6 +1748,29 @@ h1, h2, h3 {
   .page-template-home .home-content .category-post h2 {
     font-size: 24px; }
 
+.page-template-template-wide .main-banner {
+  color: #fff;
+  text-align: center;
+  position: relative; }
+  .page-template-template-wide .main-banner img {
+    width: 100%; }
+  .page-template-template-wide .main-banner .banner-title,
+  .page-template-template-wide .main-banner .banner-subtitle {
+    font-weight: 300;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    padding: 0 60px; }
+  .page-template-template-wide .main-banner .banner-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); }
+  .page-template-template-wide .main-banner .banner-subtitle {
+    font-size: 14px;
+    bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); }
+
 #mobile #sidebar #masthead {
   min-height: 75px; }
 
@@ -1770,11 +1781,10 @@ h1, h2, h3 {
   z-index: 1; }
 
 #mobile #sidebar .arc-logo-mobile {
-  width: 75px;
+  width: 175px;
   position: absolute;
-  top: 10px;
+  top: 2px;
   left: 0;
-  right: 0;
   margin: auto; }
   #mobile #sidebar .arc-logo-mobile img {
     width: 100%; }

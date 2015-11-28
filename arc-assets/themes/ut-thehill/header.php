@@ -31,11 +31,11 @@
 
 
 		<script>
-			
+
 			/*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
 
       (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
-			
+
 			grunticon(["<?php echo get_template_directory_uri(); ?>/library/css/icons.data.svg.css", "<?php echo get_template_directory_uri(); ?>/library/css/icons.data.png.css", "<?php echo get_template_directory_uri(); ?>/library/css/icons.fallback.css"]);
 		</script>
 		<noscript><link href="<?php echo get_template_directory_uri(); ?>/library/css/icons.fallback.css" rel="stylesheet"></noscript>
@@ -44,15 +44,15 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/images/interface/icon-114x114.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/images/interface/icon-72x72.png">
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/interface/icon-114x114.png">
-<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/interface/favicon.gif">	
-<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/interface/favicon.ico">	
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/interface/favicon.gif">
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/interface/favicon.ico">
 
 
 
 
-		<?php 
+		<?php
       $useGotham = get_option( 'ut_use_gotham' );
-      if ($useGotham): ?> 
+      if ($useGotham): ?>
         <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6831932/618846/css/fonts.css" />
     <?php endif ?>
 
@@ -100,11 +100,11 @@
         		</nav><!-- #site-navigation -->
         </div>
       </div>
-      
+
 	<div id="primary" class="content-area">
 		<header id="sitetitle" class="site-header" role="banner">
       <h2 class="department"><a tabindex="2" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-       <?php 
+       <?php
         $includeParent = get_option( 'ut-site-info-parentunitincludeinheader_checkbox' );
 
         if(isset($includeParent) && $includeParent == 'on'): ?>

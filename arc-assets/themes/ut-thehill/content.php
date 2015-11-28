@@ -54,7 +54,7 @@
 
 	<footer class="entry-meta">
 		<?php if ( comments_open() && ! is_single() && ! is_search() ) : ?>
-			<div class="comments-link"><i class="icon-fa-comment"></i> 
+			<div class="comments-link"><i class="icon-fa-comment"></i>
 				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'utthehill' ) . '</span>', __( 'One comment so far', 'utthehill' ), __( 'View all % comments', 'utthehill' ) ); ?>
 			</div><!-- .comments-link -->
 		<?php endif; // comments_open() ?>
