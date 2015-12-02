@@ -31,6 +31,9 @@
 			.banner-subtitle {
 				position: static;
 				padding: 10px;
+				&:empty {
+					padding: 0;
+				}
 			}
 		}
 	}

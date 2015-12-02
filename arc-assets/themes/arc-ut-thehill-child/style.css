@@ -1776,7 +1776,10 @@ h1, h2, h3 {
       .page-template-template-wide .main-banner .banner-title,
       .page-template-template-wide .main-banner .banner-subtitle {
         position: static;
-        padding: 10px; } }
+        padding: 10px; }
+        .page-template-template-wide .main-banner .banner-title:empty,
+        .page-template-template-wide .main-banner .banner-subtitle:empty {
+          padding: 0; } }
 
 #mobile #sidebar #masthead {
   min-height: 75px; }
