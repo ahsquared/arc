@@ -141,7 +141,7 @@
                 </h4>
                 <button type="button" class="toggle close findpage">
                     <span class="sr-only">Toggle navigation</span> <i
-                        class="icon-fa-find"></i><br><?php _e('FIND <br> PAGE', 'utthehill'); ?>
+                        class="icon-fa-find"></i><br><?php _e('SEARCH', 'utthehill'); ?>
                 </button>
             </header>
             <!-- #masthead -->
