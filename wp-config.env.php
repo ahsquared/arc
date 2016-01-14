@@ -22,11 +22,6 @@ switch ($hostname) {
     	define('WP_ENV', 'local');
     	break;
 
-    case 'ahsquared.com':
-    case 'www.ahsquared.com':
-        define('WP_ENV', 'development');
-        break;
-
     case 'cmhsrc-test.utk.edu':
         define('WP_ENV', 'staging');
         break;

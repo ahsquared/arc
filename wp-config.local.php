@@ -12,8 +12,8 @@
 
 // from iThemes
 //Do not delete these. Doing so WILL break your site.
-define( 'WP_CONTENT_URL', 'http://arc.dev/arc-assets' );
-define( 'WP_CONTENT_DIR', '/Users/ahayter/Sites/arc/arc-assets' );
+define( 'WP_CONTENT_URL', 'http://arc.dev/ARCI/arc-assets' );
+define( 'WP_CONTENT_DIR', '/Users/ahayter/Sites/arc/ARCI/arc-assets' );
 //The entry below were created by iThemes Security to disable the file editor
 define( 'DISALLOW_FILE_EDIT', true );
 
