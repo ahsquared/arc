@@ -1,48 +1,42 @@
 <?php
-// from iThemes
-//Do not delete these. Doing so WILL break your site.
-define( 'WP_CONTENT_URL', 'http://arc.dev/ARCI/arc-assets' );
-define( 'WP_CONTENT_DIR', '/Users/ahayter/Sites/arc/ARCI/arc-assets' );
-//The entry below were created by iThemes Security to disable the file editor
-define( 'DISALLOW_FILE_EDIT', true );
+
+define( 'WP_CONTENT_DIR', '/Users/ahayter/Sites/arc/cmhsrc-assets' ); // Do not remove. Removing this line could break your site. Added by Security > Settings > Change Content Directory.
+define( 'WP_CONTENT_URL', 'http://arc.dev/cmhsrc-assets' ); // Do not remove. Removing this line could break your site. Added by Security > Settings > Change Content Directory.
 
 /**
- * The base configurations of the WordPress.
+ * The base configuration for WordPress
  *
- * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, and ABSPATH. You can find more information by visiting
- * {@link https://codex.wordpress.org/Editing_wp-config.php Editing wp-config.php}
- * Codex page. You can get the MySQL settings from your web host.
+ * The wp-config.php creation script uses this file during the
+ * installation. You don't have to use the web site, you can
+ * copy this file to "wp-config.php" and fill in the values.
  *
- * This file is used by the wp-config.php creation script during the
- * installation. You don't have to use the web site, you can just copy this file
- * to "wp-config.php" and fill in the values.
+ * This file contains the following configurations:
+ *
+ * * MySQL settings
+ * * Secret keys
+ * * Database table prefix
+ * * ABSPATH
+ *
+ * @link https://codex.wordpress.org/Editing_wp-config.php
  *
  * @package WordPress
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-define('DB_DRIVER', 'mysql');
-
 /** The name of the database for WordPress */
-define('DB_NAME', 'wp_arc');
-
+define('DB_NAME', 'wp_cmhsrc');
 
 /** MySQL database username */
 define('DB_USER', 'root');
 
-
 /** MySQL database password */
 define('DB_PASSWORD', 'dev@ccess14');
-
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
 
-
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
-
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -56,25 +50,24 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY', 'GSdY {.Hq!!Dn|V(N(/+C/JL+C;c:l4y38-3W*.!R8c4ZXL EI=6GuerX,tPh=#~');
-define('SECURE_AUTH_KEY', 'SXAaCx@*:$KRy)Q2qBvWWz#fv>VD&vaw&AwgY,[Q~w<,eKYu!(%ufRABL)4pd4L)');
-define('LOGGED_IN_KEY', ';8{P4#;B.+xbw-v>2?o7PP,[wZbAqNhii.X@`Pb7Az8Wh}R9{6DDhyqE=s4a5!i#');
-define('NONCE_KEY', '86NEhP?I#6;)WJRKb)#if|N|id|#$ OK6{##D!jeFa[]KDyLk?Uq{<g.//`@/lj3');
-define('AUTH_SALT', ' =DDXMI{Nu%_Yav9?$+]9:_6|UG{5PR5A),_uE!8YOSiO@^NP3AkWk^N5jBxZ*}+');
-define('SECURE_AUTH_SALT', '0+8)pHQ@)>-w80`jq/t@i/m@gN.5s[Q*~l1[Sd0A?JX6.t%mq.[y<?? L>54(iJS');
-define('LOGGED_IN_SALT', 'u.E@a; ?AW5w%HJ<Dvswtqw5l]v:,5Kp2$}26{0<LrpoYZh{)AkbRG62u{VpT:Fh');
-define('NONCE_SALT', '7v9AjwtVOJ` >&]%e?^VEJkZy5$^Xg+rBURL^~<sg3rbHf^LdU<I|d<o88:s$^Jd');
+define('AUTH_KEY',         ' #Z0n4M3v71x2cEap3eUH9fy=rrUF0J=HD G3d ^(zx%g!YtQr;lWKR9$BAI*rx?');
+define('SECURE_AUTH_KEY',  'GLJ_3s]-=s?^Q<^^ 0BZ0~|zj>Roa<32vr%n&+0E4}Jgt8=|L+H,HDx*Ykj^=KFL');
+define('LOGGED_IN_KEY',    'WfT?W(#m8wH354|};Uk,@>osf$EZ g=M2azM<}q_,N[%jlJC>DnD`a#5{z4G|gGV');
+define('NONCE_KEY',        'Kwy`%94KdM=(e )VF+d]yU:Prs.B^qn~2F=b8!)fb?4?}1B43l2ienAr~D6/`c37');
+define('AUTH_SALT',        'A1P<]$divm`3k||P:CDyB2_1<6qJj>c1LP+lUz^)F_-cpdSNcF-= }Q-C3Bl-GuA');
+define('SECURE_AUTH_SALT', 'cfR4?:3=J$|CFbBr|d;d2.(^-=WZm H@=@AZZTr/6q2O=eGQ+UUntT9tWQ:oqr;O');
+define('LOGGED_IN_SALT',   '868W*w2cQOxi78k36cw7.rrCoeET_^@vhj_O+tQZF1OSsl#,tS^iU-pBk-=.@d^Y');
+define('NONCE_SALT',       'qjDQO^+~)88_-(SXw^Z3Cr[AJ|.?^nP|G&q3XxJq-r@)1($tcH_d+L*#L+vnP&gJ');
 
 /**#@-*/
 
 /**
  * WordPress Database Table prefix.
  *
- * You can have multiple installations in one database if you give each a unique
- * prefix. Only numbers, letters, and underscores please!
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'arc1542_';
-
+$table_prefix  = 'nb6gc6vd8l_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -82,6 +75,11 @@ $table_prefix  = 'arc1542_';
  * Change this to true to enable the display of notices during development.
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
+ *
+ * For information on other constants that can be used for debugging,
+ * visit the Codex.
+ *
+ * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
 

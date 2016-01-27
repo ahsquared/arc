@@ -1,0 +1,25 @@
+#megamenu {
+	&.singlemenu {
+		ul {
+			li {
+				a, button {
+					background: none;
+					border: 0 none;
+					color: #000;
+					height: auto;
+					padding: 7px 0;
+					&:hover, &:focus, &:active {
+						color: $menu-active-color;
+						font-weight: 400;
+					}
+				}
+				&.current-menu-item {
+					> a {
+						color: $menu-active-color;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,176 @@
+#page,
+.sidebar-offcanvas,
+#megamenu .home_button,
+#megamenu button {
+	background-color: #ffffff;
+}
+
+#sidebar {
+
+}
+
+.main-content {
+	float: right;
+	width: 70%;
+}
+
+#primary {
+	width: 100%;
+	float: none;
+	.entry-thumbnail {
+		img {
+			width: 100%;
+		}
+	}
+	.post-thumbnail img, .wp-post-image, img.size-large {
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	#content,
+	#content.wide {
+		width: 100%;
+		margin: 0;
+		.entry-title {
+			padding-left: 15px;
+		}
+		.entry-content {
+			padding: 15px;
+			h1 {
+				margin-left: 0;
+				margin-bottom: 20px;
+			}
+			h2 {
+				clear: both;
+				margin-left: 0;
+				margin-bottom: 20px;
+			}
+			hr {
+				clear: both;
+			}
+		}
+	}
+}
+
+#colophon {
+	border: 0 none;
+	width: 70%;
+	float: right;
+	#siteinfo {
+		background-color: $gray-light-bg;
+		box-shadow: inset 1px 3px 7px -6px #ccc;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	#campus-footer {
+		background-color: $gray-bg;
+	}
+}
+
+.entry-thumbnail,
+.post-thumbnail {
+	img {
+		margin-bottom: 0;
+	}
+}
+#sitetitle {
+	border: 0 none;
+	padding: 0;
+}
+.entry-header {
+	background: $header-bg;
+	padding: 20px 0;
+	h1 {
+		color: $header-color;
+		font-size: 24px;
+		margin: 0;
+	}
+	h2 {
+		color: $subheader-color;
+		font-size: 24px;
+		margin-top: 8px;
+	}
+
+}
+.read-more {
+	clear: both;
+	display: block;
+	font-family: sans-serif;
+	padding-left: 50%;
+	position: relative;
+	button {
+		color: $read-more-color;
+		outline: 0 none;
+		&:before {
+			background: $line-color;
+			content: " ";
+			position: absolute;
+			width: 40%;
+			height: 1px;
+			right: 60%;
+			top: 20px;
+		}
+		.arrow {
+			display: inline-block;
+			margin-left: 24px;
+			border-radius: 50%;
+			border: 2px solid $read-more-color;
+			width: 26px;
+			height: 26px;
+			line-height: 24px;
+		}
+	}
+}
+.entry-content {
+	line-height: 1.4;
+	h1 {
+		color: $header-color;
+		display: table;
+		font-size: 18px;
+		margin: 0 0 0 40px;
+		white-space: nowrap;
+		&:after {
+			border-left: 50px solid #fff;
+			border-bottom: 1px solid $line-color;
+			content: " ";
+			display: table-cell;
+			width: 100%;
+			position: relative;
+			top: -6px;
+		}
+	}
+	h2 {
+		color: $subheader-color;
+		font-size: 18px;
+		margin: 8px 0 0 40px;
+	}
+	h3 {
+		font-size: 16px;
+	}
+	img.size-full,
+	img.size-large {
+		margin-bottom: 40px;
+	}
+}
+.two-column {
+	columns: 240px 2;
+	column-gap: 4em;
+	padding: 40px;
+}
+.pager {
+	li {
+		> a {
+			border: 0 none;
+			border-radius: 0;
+		}
+	}
+}
+.arc-blockquote {
+	margin-left: 25px;
+	&.pull-right {
+		text-align: center;
+		width: 33%;
+	}
+}
+
