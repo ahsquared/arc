@@ -23,7 +23,7 @@ get_header(); ?>
                 $args = array(
                     'type' => 'publication',
                     'child_of' => 0,
-                    'parent' => '6',
+                    'parent' => '10',
                     'orderby' => 'name',
                     'order' => 'ASC',
                     'hide_empty' => 1,
